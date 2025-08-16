@@ -136,3 +136,7 @@ str(disturbance_df_n2k_final)
 write.csv(disturbance_df_n2k_final, 
           "n2k_disturbance_by_year_no_fire.csv", 
           row.names = FALSE)
+
+
+save.image(file="first_checkpoint.RData")
+
