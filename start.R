@@ -93,9 +93,10 @@ process_site <- function(site_polygon, gfc_raster, fires_data, target_crs) {
 }
 
 # --- Loop through all sites and process them one by one --- #
-# Pre-allocating the list is more efficient. Set to total_sites for the full run.
-results_list <- vector("list", length = 10)
+# Pre-allocating the list is more efficient. Set total_sites for the full run.
 total_sites <- nrow(n2k_sites)
+results_list <- vector("list", length = total_sites)
+
 
 for (i in 1:total_sites) {
   # Print progress
@@ -139,4 +140,3 @@ write.csv(disturbance_df_n2k_final,
 
 
 save.image(file="first_checkpoint.RData")
-
