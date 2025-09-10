@@ -32,6 +32,8 @@ gfc_crs <- crs(gfc_lossyear_merged) # Get the raster's original CRS
 
 # --- Define a function to process a single N2K site --- #
 # This function will perform all heavy processing on a small chunk of data.
+# --- Define a function to process a single N2K site --- #
+# This function will perform all heavy processing on a small chunk of data.
 process_site <- function(site_polygon, gfc_raster, fires_data, target_crs) {
   tryCatch({
     # 1. Get the site's bounding box and transform it to the raster's CRS.
@@ -65,7 +67,7 @@ process_site <- function(site_polygon, gfc_raster, fires_data, target_crs) {
     gfc_no_fire <- gfc_cropped_proj
     if (nrow(intersecting_fires) > 0) {
       # Mask using all relevant fires at once, more efficient than looping.
-      gfc_no_fire <- mask(gfc_no_fire, intersecting_fires, # nolint: object_name_linter.
+      gfc_no_fire <- mask(gfc_no_fire, intersecting_fires, 
                           inverse = TRUE, updatevalue = NA)
     }
 
@@ -78,12 +80,18 @@ process_site <- function(site_polygon, gfc_raster, fires_data, target_crs) {
     if (length(disturbance_pixels) == 0 || nrow(disturbance_pixels[[1]]) == 0) {
         return(NULL)
     }
-
-    # Extract the data frame and summarize to get pixel counts for each
-    # event year (value=0 represents undisturbed pixels).
+    
+    # FIX: Filter out 0s (undisturbed) and NAs before summarizing.
     disturbance_stats <- disturbance_pixels[[1]] %>%
+        filter(value > 0 & !is.na(value)) %>%
         group_by(SITECODE, value) %>%
         summarize(pixel_count = sum(coverage_fraction), .groups = 'drop')
+    
+    # If there are no disturbance pixels left after filtering, return NULL.
+    if(nrow(disturbance_stats) == 0) {
+        return(NULL)
+    }
+    
     return(disturbance_stats)
   }, error = function(e) {
     # If any error occurs for a site, print it and return NULL
@@ -140,3 +148,6 @@ write.csv(disturbance_df_n2k_final,
 
 
 save.image(file="first_checkpoint.RData")
+
+## now move onto other R files, like buffer_analysis.R, 
+## compare_analysis.R, or compare_inside_outside.R

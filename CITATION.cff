@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Natura 2000 Analysis (R Code)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Sam
+    family-names: Davis
+    email: sdavis@pfpi.net
+    affiliation: Partnership for Policy Integrity
+    orcid: 'https://orcid.org/0000-0002-5102-1288'
+identifiers:
+  - type: url
+    value: 'https://github.com/PFPI/N2K-analysis-R'
+    description: Code Repository
+repository-code: 'https://github.com/PFPI/N2K-analysis-R'
+url: 'https://forestdefenders.org'
+abstract: >-
+  Large, coordinated protected area networks are a
+  cornerstone of global biodiversity conservation, yet their
+  effectiveness in mitigating accelerating environmental
+  pressures remains a critical question. This code uses R to
+  examine the disturbance rates within and outside of Natura
+  2000 sites in Europe.
+keywords:
+  - Natura 2000
+  - forest disturbance
+license: Unlicense

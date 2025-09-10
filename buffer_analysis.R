@@ -114,11 +114,17 @@ process_site_buffer <- function(site_buffer_polygon, gfc_raster, fires_data, tar
 }
 
 # --- Loop through all sites, create buffer, and process one by one --- #
-# This approach avoids creating all buffers in memory at once.
-total_sites <- nrow(n2k_sites)
-results_list <- vector("list", length = total_sites)
+# This approach avoids creating all buffers in memory at once by writing
+# results to a CSV file incrementally.
 
+# 1. Create the header for our output file first.
+# This initializes/overwrites the file.
+header <- "SITECODE,year,disturbed_ha"
+writeLines(header, output_csv_path)
+
+total_sites <- nrow(n2k_sites)
 message(paste("\n--- Starting analysis for", total_sites, "site buffers ---"))
+# The results_list is no longer needed.
 
 for (i in 1:total_sites) {
   # Print progress less frequently to avoid cluttering the console
@@ -149,37 +155,26 @@ for (i in 1:total_sites) {
                                      effis_fires,
                                      target_crs)
 
-  # Add the result to our list
-  if (!is.null(site_result)) {
-    results_list[[i]] <- site_result
+  # Process this single result and append it to the CSV
+  if (!is.null(site_result) && nrow(site_result) > 0) {
+    # Transform the data for the current site
+    processed_result <- site_result %>%
+      rename(loss_year = value) %>%
+      filter(loss_year > 0) %>%
+      mutate(year = loss_year + 2000) %>%
+      mutate(disturbed_ha = pixel_count * (30 * 30) / 10000) %>%
+      select(SITECODE, year, disturbed_ha)
+
+    # Append the processed result to the CSV file without writing the header again
+    if (nrow(processed_result) > 0) {
+      write.table(processed_result,
+                  output_csv_path,
+                  sep = ",",
+                  append = TRUE,
+                  row.names = FALSE,
+                  col.names = FALSE)
+    }
   }
-}
-
-# --- Process the results into a clean table ---
-message("\n--- Aggregating and cleaning results ---")
-# Combine the list of results into a single data frame
-disturbance_df_buffer <- bind_rows(results_list)
-
-# Check if the results are empty
-if (nrow(disturbance_df_buffer) > 0) {
-  disturbance_df_buffer_final <- disturbance_df_buffer %>%
-    rename(loss_year = value) %>%
-    # The GFC dataset codes years as 1-23 for 2001-2023. Value 0 is no loss.
-    filter(loss_year > 0) %>%
-    mutate(year = loss_year + 2000) %>%
-    # Convert pixel count to hectares (assuming 30m x 30m Hansen pixels)
-    mutate(disturbed_ha = pixel_count * (30 * 30) / 10000) %>%
-    select(SITECODE, year, disturbed_ha)
-
-  message("\n--- Final Buffer Disturbance Data (Top 5 rows) ---")
-  print(head(disturbance_df_buffer_final))
-  message(paste("\n--- Writing results to:", output_csv_path, "---"))
-  write.csv(disturbance_df_buffer_final,
-            output_csv_path,
-            row.names = FALSE)
-
-} else {
-  message("--- No disturbances found in any of the buffer areas. ---")
 }
 
 # --- Save workspace ---

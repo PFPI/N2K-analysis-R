@@ -1,0 +1,37 @@
+Pan European Analysis: Odds Ratios
+	Odds Ratio (Inside vs. Buffer): 0.474
+	Odds Ratio (Buffer vs. Inside): 2.111
+Interpretation: The odds of a protected forest being disturbed are 0.474. Values less than one indicate a lowered probability.
+	A protected forest is 32.1 percent less likely to be disturbed compared to an unprotected forest.
+Interpretation: The odds of an uprotected forest being disturbed are 2.111. Values less than one indicate a lowered probability.
+	An unprotected forest is 67.9 percent more likely to be disturbed compared to a protected forest.
+
+
+Pan European Analysis: Slope Tests
+
+Trend for Disturbance INSIDE N2K sites:
+	Mann-Kendall p-value: 0.0016
+	Sen's Slope (ha/year): 3850.16
+Trend for Disturbance in BUFFER zones:
+	Mann-Kendall p-value: 1e-04
+	Sen's Slope (ha/year): 6000.84
+	
+---- Proper Analysis ----
+
+	Pan European Analysis: Odds Ratios
+	Odds Ratio (Inside vs. Buffer): 0.405
+	Odds Ratio (Buffer vs. Inside): 2.471
+Interpretation: The odds of a protected forest being disturbed are 0.405. Values less than one indicate a lowered probability.
+	A protected forest is 28.8 percent less likely to be disturbed compared to an unprotected forest.
+Interpretation: The odds of an uprotected forest being disturbed are 2.471. Values less than one indicate a lowered probability.
+	An unprotected forest is 71.2 percent more likely to be disturbed compared to a protected forest.
+
+Pan European Analysis: Slope Tests
+Trend for Disturbance INSIDE N2K sites:
+	Mann-Kendall p-value: 0.0016
+	Sen's Slope (ha/year): 3850.16
+Trend for Disturbance in BUFFER zones:
+	Mann-Kendall p-value: 2e-04
+	Sen's Slope (ha/year): 6879.78
+
+Member State Analysis

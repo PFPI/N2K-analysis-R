@@ -59,6 +59,7 @@ message("--- Part 1: Calculating/Verifying Total Forest Area ---")
 # Load N2K sites first, as we'll need them regardless.
 message("Loading N2K sites for area calculation...")
 n2k_sites_raw <- st_read(n2k_gpkg_path, layer = n2k_layername)
+## Transform to the same CRS and validate
 n2k_sites_all <- st_transform(n2k_sites_raw, crs = target_crs) %>%
   st_make_valid() %>%
   select(SITECODE) # Only keep the SITECODE and geometry
@@ -74,6 +75,7 @@ if (file.exists(forest_area_output_path)) {
     filter(!SITECODE %in% processed_sitecodes)
 
   message(paste(length(processed_sitecodes), "sites already processed."))
+  message(paste(length(sites_to_process), "sites need to be processed."))
 } else {
   message("Forest area file not found. Will process all sites from scratch.")
   # Write the header for the new CSV file
@@ -165,6 +167,9 @@ if (total_to_process > 0) {
 }
 
 
+### IN HERE I HAVE TO MODIFY # Aggregate total disturbance per site
+
+
 # --- Part 2: Load and Aggregate All Data --- #
 message("\n--- Part 2: Loading and preparing disturbance data. ---")
 
@@ -177,12 +182,17 @@ disturbance_buffer <- read_csv(buffer_disturbance_path, show_col_types = FALSE)
 
 # Aggregate total disturbance per site
 total_disturbance_inside <- disturbance_inside %>%
+  filter(loss_year != 0) %>%
   group_by(SITECODE) %>%
-  summarise(disturbed_ha_inside = sum(disturbed_ha, na.rm = TRUE), .groups = "drop")
+  summarise(disturbed_ha_inside = sum(disturbed_ha, na.rm = TRUE),
+            .groups = "drop")
 
+# Aggregate total disturbance in 1km buffer zones
 total_disturbance_buffer <- disturbance_buffer %>%
+  filter(year != 2000) %>% ## new, untested. remove if problematic. 
   group_by(SITECODE) %>%
-  summarise(disturbed_ha_buffer = sum(disturbed_ha, na.rm = TRUE), .groups = "drop")
+  summarise(disturbed_ha_buffer = sum(disturbed_ha, na.rm = TRUE),
+            .groups = "drop")
 
 # Join everything together
 analysis_df <- forest_areas %>%
@@ -207,11 +217,12 @@ analysis_df <- forest_areas %>%
   )
 
 glimpse(analysis_df)
-
+write.csv(analysis_df, "exports/intermediate_cio2-3_analysis.csv")
 
 # --- Part 3: Pan-European Statistical Analysis --- #
 message("\n--- Part 3: Performing Pan-European Analysis ---")
 
+analysis_df <- read.csv("exports/intermediate_cio2-3_analysis.csv")
 # Aggregate all data to the pan-European level
 pan_europe_summary <- analysis_df %>%
   summarise(
@@ -242,33 +253,95 @@ b <- contingency_table_eu[1, 2] # Undisturbed Inside
 c <- contingency_table_eu[2, 1] # Disturbed Buffer
 d <- contingency_table_eu[2, 2] # Undisturbed Buffer
 odds_ratio_eu <- (a / b) / (c / d)
-message(paste("Odds Ratio (Inside vs. Buffer):", round(odds_ratio_eu, 3)))
-message("Interpretation: The odds of a forest being disturbed are ", round(odds_ratio_eu, 3), " times as high inside a Natura 2000 site compared to its 1km buffer.")
+odds_ratio_disturbed <- (c / d) / (a / b)
+
+
+save_output <- function(msg_string, file_path = "exports/output.txt") {
+  cat(msg_string, file = file_path, append = TRUE)
+}
+
+save_output("Pan European Analysis: Odds Ratios\n")
+
+save_output(paste0("\tOdds Ratio (Inside vs. Buffer): ",
+                   round(odds_ratio_eu, 3), "\n"))
+
+save_output(paste0("\tOdds Ratio (Buffer vs. Inside): ",
+                   round(odds_ratio_disturbed, 3), "\n"))
+
+save_output(paste0("Interpretation: The odds of a protected forest ",
+                   "being disturbed are ", round(odds_ratio_eu, 3),
+                   ". Values less than one indicate a lowered probability.\n"))
+
+if (odds_ratio_eu < 1) {
+  save_output(paste0("\tA protected forest is ",
+                     round(odds_ratio_eu / (odds_ratio_eu + 1), 3) * 100,
+                     " percent less likely to be disturbed",
+                     " compared to an unprotected forest.\n"))
+} else {
+  save_output(paste0("\tA protected forest is ",
+                     round(odds_ratio_eu / (odds_ratio_eu + 1), 3) * 100,
+                     " percent more likely to be disturbed",
+                     " compared to an unprotected forest.\n"))
+}
+
+
+save_output(paste0("Interpretation: The odds of an uprotected forest ",
+                   "being disturbed are ", round(odds_ratio_disturbed, 3),
+                   ". Values less than one indicate a lowered probability.\n"))
+
+if (odds_ratio_disturbed < 1) {
+  save_output(paste0("\tAn unprotected forest is ",
+                     round(odds_ratio_disturbed /
+                             (odds_ratio_disturbed + 1), 3) * 100,
+                     " percent less likely to be disturbed",
+                     " compared to a protected forest.\n"))
+} else {
+  save_output(paste0("\tAn unprotected forest is ",
+                     round(odds_ratio_disturbed /
+                             (odds_ratio_disturbed + 1), 3) * 100,
+                     " percent more likely to be disturbed",
+                     " compared to a protected forest.\n"))
+}
+save_output("\n\n")
+
+message("Odds Ratio and explanation can be found in exports/output.txt")
 
 # 2. Trend Analysis
 message("\n--- Trend Analysis (Pan-European) ---")
+save_output("Pan European Analysis: Slope Tests\n")
+
+
+# disturbance_inside <- read_csv(n2k_disturbance_path, show_col_types = FALSE)
+# disturbance_buffer <- read_csv(buffer_disturbance_path, show_col_types = FALSE)
 
 # Prepare time series data
-ts_inside <- disturbance_inside %>% group_by(year) %>% summarise(total_ha = sum(disturbed_ha))
-ts_buffer <- disturbance_buffer %>% group_by(year) %>% summarise(total_ha = sum(disturbed_ha))
+ts_inside <- disturbance_inside %>%
+  group_by(year) %>%
+  summarise(total_ha = sum(disturbed_ha))
+ts_buffer <- disturbance_buffer %>%
+  group_by(year) %>%
+  summarise(total_ha = sum(disturbed_ha))
 
 # Trend test for INSIDE
 mk_inside <- mk.test(ts_inside$total_ha)
 sen_inside <- sens.slope(ts_inside$total_ha)
-message("\nTrend for Disturbance INSIDE N2K sites:")
-message(paste("  Mann-Kendall p-value:", round(mk_inside$p.value, 4)))
-message(paste("  Sen's Slope (ha/year):", round(sen_inside$estimates, 2)))
+save_output("Trend for Disturbance INSIDE N2K sites:\n")
+save_output(paste("\tMann-Kendall p-value:", round(mk_inside$p.value, 4)))
+save_output(paste("\n\tSen's Slope (ha/year):", round(sen_inside$estimates, 2)))
 
+save_output("\n")
 # Trend test for BUFFER
 mk_buffer <- mk.test(ts_buffer$total_ha)
 sen_buffer <- sens.slope(ts_buffer$total_ha)
-message("\nTrend for Disturbance in BUFFER zones:")
-message(paste("  Mann-Kendall p-value:", round(mk_buffer$p.value, 4)))
-message(paste("  Sen's Slope (ha/year):", round(sen_buffer$estimates, 2)))
+save_output("Trend for Disturbance in BUFFER zones:\n")
+save_output(paste("\tMann-Kendall p-value:", round(mk_buffer$p.value, 4)))
+save_output(paste("\n\tSen's Slope (ha/year):", round(sen_buffer$estimates, 2)))
+
 
 
 # --- Part 4: Member State Statistical Analysis --- #
 message("\n\n--- Part 4: Performing Member State Analysis ---")
+save_output("\n\nMember State Analysis\n")
 
 # Aggregate data by member state
 ms_summary <- analysis_df %>%
@@ -277,13 +350,16 @@ ms_summary <- analysis_df %>%
     across(where(is.numeric), sum, na.rm = TRUE),
     .groups = "drop"
   ) %>%
-  filter(forest_ha_inside > 0, forest_ha_buffer > 0) # Only test states with area in both zones
+  # Only test states with area in both zones
+  filter(forest_ha_inside > 0, forest_ha_buffer > 0) 
 
-
+# write.csv(ms_summary, "exports/intermediate_step4.csv")
+## Showing no disturbed HA in buffers in AT or BE. Def not true. 
 
 # For efficiency, pre-aggregate the time series data for trend analysis
 ms_ts_inside <- disturbance_inside %>%
   mutate(member_state = substr(SITECODE, 1, 2)) %>%
+  filter(year != 2000) %>%
   group_by(member_state, year) %>%
   summarise(total_ha = sum(disturbed_ha, na.rm = TRUE), .groups = "drop")
 
@@ -303,7 +379,8 @@ run_ms_analysis <- function(df_row, ts_data_in, ts_data_out) {
   
   # Odds Ratio
   a <- tbl[1, 1]; b <- tbl[1, 2]; c <- tbl[2, 1]; d <- tbl[2, 2]
-  odds_ratio <- if (b > 0 && c > 0) (a * d) / (b * c) else NA
+  print(c(df_row$member_state, a, b, c, d))
+  odds_ratio <- if (b != 0 && c != 0) (a * d) / (b * c) else NA
   
   # Trend Analysis
   ms_code <- df_row$member_state
