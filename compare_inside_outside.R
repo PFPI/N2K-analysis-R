@@ -353,8 +353,9 @@ ms_summary <- analysis_df %>%
   # Only test states with area in both zones
   filter(forest_ha_inside > 0, forest_ha_buffer > 0) 
 
-# write.csv(ms_summary, "exports/intermediate_step4.csv")
-## Showing no disturbed HA in buffers in AT or BE. Def not true. 
+ write.csv(ms_summary, "exports/intermediate_step4.csv")
+## Originally showing no disturbed HA in buffers in AT or BE.
+## Made a few edits to buffer_analysis.R and re-ran to get corrections.
 
 # For efficiency, pre-aggregate the time series data for trend analysis
 ms_ts_inside <- disturbance_inside %>%
