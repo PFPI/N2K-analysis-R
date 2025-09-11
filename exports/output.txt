@@ -1,24 +1,4 @@
 Pan European Analysis: Odds Ratios
-	Odds Ratio (Inside vs. Buffer): 0.474
-	Odds Ratio (Buffer vs. Inside): 2.111
-Interpretation: The odds of a protected forest being disturbed are 0.474. Values less than one indicate a lowered probability.
-	A protected forest is 32.1 percent less likely to be disturbed compared to an unprotected forest.
-Interpretation: The odds of an uprotected forest being disturbed are 2.111. Values less than one indicate a lowered probability.
-	An unprotected forest is 67.9 percent more likely to be disturbed compared to a protected forest.
-
-
-Pan European Analysis: Slope Tests
-
-Trend for Disturbance INSIDE N2K sites:
-	Mann-Kendall p-value: 0.0016
-	Sen's Slope (ha/year): 3850.16
-Trend for Disturbance in BUFFER zones:
-	Mann-Kendall p-value: 1e-04
-	Sen's Slope (ha/year): 6000.84
-	
----- Proper Analysis ----
-
-	Pan European Analysis: Odds Ratios
 	Odds Ratio (Inside vs. Buffer): 0.405
 	Odds Ratio (Buffer vs. Inside): 2.471
 Interpretation: The odds of a protected forest being disturbed are 0.405. Values less than one indicate a lowered probability.
@@ -35,3 +15,249 @@ Trend for Disturbance in BUFFER zones:
 	Sen's Slope (ha/year): 6879.78
 
 Member State Analysis
+# A tibble: 27 × 7
+   member_state chi2_p_value odds_ratio mk_p_inside sens_slope_inside
+   <chr>               <dbl>      <dbl>       <dbl>             <dbl>
+ 1 AT              0             0.722   0.0813               31.0   
+ 2 BE              1.01e- 56     0.873   0.0910               24.2   
+ 3 BG              3.38e-192     1.26    0.224                31.9   
+ 4 CY              2.87e-173     0.238   0.224                -0.500 
+ 5 CZ              0             1.59    0.00310             253.    
+ 6 DE              0             0.780   0.0201              513.    
+ 7 DK              0             0.315   0.673                -7.39  
+ 8 EE              0             0.0747  0.0175               41.5   
+ 9 ES              0             0.494   0.000596            372.    
+10 FI              0             0.0460  0.00827              22.7   
+11 FR              0             0.260   0.00127             275.    
+12 GR              3.67e- 80     0.826   0.958                 1.82  
+13 HR              0             1.68    0.000328             96.0   
+14 HU              0             1.84    0.0265               59.8   
+15 IE              0             0.696   0.187                19.3   
+16 IT              0             0.798   0.00000259          213.    
+17 LT              0             1.44    0.000328            132.    
+18 LU              5.29e- 58     1.43    0.00183               6.38  
+19 LV              0             0.243   0.113                19.8   
+20 MT              4.45e-  5     0.223   0.193                -0.0633
+21 NL              2.30e-259     1.78    0.712                 6.50  
+22 PL              0             1.43    0.000218            700.    
+23 PT              0             0.409   0.0000476           184.    
+24 RO              0             1.83    0.0507              118.    
+25 SE              0             0.0248  0.245                15.3   
+26 SI              3.69e-210     1.36    0.00219              70.0   
+27 SK              0             1.53    0.316                50.5   
+# ℹ 2 more variables: mk_p_buffer <dbl>, sens_slope_buffer <dbl>
+
+--- Analysis for AT ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.722
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.722 instances in the site.
+Trend Inside - p-value: 0.0813, slope: 31.02 ha/yr
+Trend Buffer - p-value: 0.0394, slope: 59.76 ha/yr
+
+
+--- Analysis for BE ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.873
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.873 instances in the site.
+Trend Inside - p-value: 0.091, slope: 24.21 ha/yr
+Trend Buffer - p-value: 0.0231, slope: 90.14 ha/yr
+
+
+--- Analysis for BG ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.264
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.264 instances in the site.
+Trend Inside - p-value: 0.2244, slope: 31.9 ha/yr
+Trend Buffer - p-value: 0.1538, slope: 19.37 ha/yr
+
+
+--- Analysis for CY ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.238
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.238 instances in the site.
+Trend Inside - p-value: 0.2244, slope: -0.5 ha/yr
+Trend Buffer - p-value: 0.5262, slope: -0.26 ha/yr
+
+
+--- Analysis for CZ ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.591
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.591 instances in the site.
+Trend Inside - p-value: 0.0031, slope: 253.05 ha/yr
+Trend Buffer - p-value: 0.0011, slope: 201.94 ha/yr
+
+
+--- Analysis for DE ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.78
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.78 instances in the site.
+Trend Inside - p-value: 0.0201, slope: 513.04 ha/yr
+Trend Buffer - p-value: 0.013, slope: 1275.56 ha/yr
+
+
+--- Analysis for DK ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.315
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.315 instances in the site.
+Trend Inside - p-value: 0.6726, slope: -7.39 ha/yr
+Trend Buffer - p-value: 0.5612, slope: 10.75 ha/yr
+
+
+--- Analysis for EE ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.075
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.075 instances in the site.
+Trend Inside - p-value: 0.0175, slope: 41.51 ha/yr
+Trend Buffer - p-value: 0, slope: 373.41 ha/yr
+
+
+--- Analysis for ES ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.494
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.494 instances in the site.
+Trend Inside - p-value: 6e-04, slope: 372.46 ha/yr
+Trend Buffer - p-value: 1e-04, slope: 489.1 ha/yr
+
+
+--- Analysis for FI ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.046
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.046 instances in the site.
+Trend Inside - p-value: 0.0083, slope: 22.67 ha/yr
+Trend Buffer - p-value: 9e-04, slope: 681.43 ha/yr
+
+
+--- Analysis for FR ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.26
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.26 instances in the site.
+Trend Inside - p-value: 0.0013, slope: 275.31 ha/yr
+Trend Buffer - p-value: 9e-04, slope: 411.68 ha/yr
+
+
+--- Analysis for GR ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.826
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.826 instances in the site.
+Trend Inside - p-value: 0.9579, slope: 1.82 ha/yr
+Trend Buffer - p-value: 0.7116, slope: 3.7 ha/yr
+
+
+--- Analysis for HR ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.684
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.684 instances in the site.
+Trend Inside - p-value: 3e-04, slope: 96.03 ha/yr
+Trend Buffer - p-value: 3e-04, slope: 35.71 ha/yr
+
+
+--- Analysis for HU ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.839
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.839 instances in the site.
+Trend Inside - p-value: 0.0265, slope: 59.84 ha/yr
+Trend Buffer - p-value: 0, slope: 112.6 ha/yr
+
+
+--- Analysis for IE ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.696
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.696 instances in the site.
+Trend Inside - p-value: 0.1867, slope: 19.32 ha/yr
+Trend Buffer - p-value: 0.0303, slope: 40.39 ha/yr
+
+
+--- Analysis for IT ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.798
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.798 instances in the site.
+Trend Inside - p-value: 0, slope: 212.83 ha/yr
+Trend Buffer - p-value: 0, slope: 237.5 ha/yr
+
+
+--- Analysis for LT ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.44
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.44 instances in the site.
+Trend Inside - p-value: 3e-04, slope: 132.35 ha/yr
+Trend Buffer - p-value: 0, slope: 177.86 ha/yr
+
+
+--- Analysis for LU ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.427
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.427 instances in the site.
+Trend Inside - p-value: 0.0018, slope: 6.38 ha/yr
+Trend Buffer - p-value: 0.0011, slope: 15.5 ha/yr
+
+
+--- Analysis for LV ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.243
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.243 instances in the site.
+Trend Inside - p-value: 0.1131, slope: 19.83 ha/yr
+Trend Buffer - p-value: 2e-04, slope: 120.48 ha/yr
+
+
+--- Analysis for MT ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.223
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.223 instances in the site.
+Trend Inside - p-value: 0.1926, slope: -0.06 ha/yr
+Trend Buffer - p-value: 0.7603, slope: -0.04 ha/yr
+
+
+--- Analysis for NL ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.782
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.782 instances in the site.
+Trend Inside - p-value: 0.7116, slope: 6.5 ha/yr
+Trend Buffer - p-value: 0.0096, slope: 6.07 ha/yr
+
+
+--- Analysis for PL ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.428
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.428 instances in the site.
+Trend Inside - p-value: 2e-04, slope: 699.81 ha/yr
+Trend Buffer - p-value: 3e-04, slope: 378.44 ha/yr
+
+
+--- Analysis for PT ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.409
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.409 instances in the site.
+Trend Inside - p-value: 0, slope: 184.24 ha/yr
+Trend Buffer - p-value: 0, slope: 129.24 ha/yr
+
+
+--- Analysis for RO ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.834
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.834 instances in the site.
+Trend Inside - p-value: 0.0507, slope: 118.25 ha/yr
+Trend Buffer - p-value: 0.0813, slope: 40.94 ha/yr
+
+
+--- Analysis for SE ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 0.025
+  - Interpretation: For every one instance of disturbance in the buffer, there are 0.025 instances in the site.
+Trend Inside - p-value: 0.2452, slope: 15.3 ha/yr
+Trend Buffer - p-value: 0.0022, slope: 960.2 ha/yr
+
+
+--- Analysis for SI ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.362
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.362 instances in the site.
+Trend Inside - p-value: 0.0022, slope: 70.02 ha/yr
+Trend Buffer - p-value: 0.0043, slope: 35.33 ha/yr
+
+
+--- Analysis for SK ---
+Chi-square p-value: 0
+Odds Ratio (Inside/Buffer): 1.534
+  - Interpretation: For every one instance of disturbance in the buffer, there are 1.534 instances in the site.
+Trend Inside - p-value: 0.3156, slope: 50.48 ha/yr
+Trend Buffer - p-value: 0.1391, slope: 43.95 ha/yr

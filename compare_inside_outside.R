@@ -412,6 +412,26 @@ ms_results <- bind_rows(lapply(
 
 message("\n--- Member State Results Summary ---")
 print(ms_results, n = 30)
+save_output(paste(capture.output(print(ms_results, n = 30)), collapse = "\n"))
+
+
+# Add these lines
+for (i in 1:nrow(ms_results)) {
+  row <- ms_results[i, ]
+
+  # Format the output string
+  output_string <- paste0(
+    "\n\n--- Analysis for ", row$member_state, " ---\n",
+    "Chi-square p-value: ", round(row$chi2_p_value, 4), "\n",
+    "Odds Ratio (Inside/Buffer): ", round(row$odds_ratio, 3), "\n",
+    "  - Interpretation: For every one instance of disturbance in the buffer, there are ", round(row$odds_ratio, 3), " instances in the site.\n",
+    "Trend Inside - p-value: ", round(row$mk_p_inside, 4), ", slope: ", round(row$sens_slope_inside, 2), " ha/yr\n",
+    "Trend Buffer - p-value: ", round(row$mk_p_buffer, 4), ", slope: ", round(row$sens_slope_buffer, 2), " ha/yr\n"
+  )
+
+  # Save the formatted string to the output file
+  save_output(output_string)
+}
 
 # --- Part 5: Save Outputs --- #
 message("\n\n--- Part 5: Saving analysis outputs ---")
