@@ -142,12 +142,12 @@ disturbance_df_n2k_final <- disturbance_df_n2k %>%
 # View the final tidy data frame
 head(disturbance_df_n2k_final)
 str(disturbance_df_n2k_final)
-write.csv(disturbance_df_n2k_final, 
-          "n2k_disturbance_by_year_no_fire.csv", 
+write.csv(disturbance_df_n2k_final,
+          "exports/n2k_disturbance_by_year_no_fire.csv",
           row.names = FALSE)
 
 
 save.image(file="first_checkpoint.RData")
 
-## now move onto other R files, like buffer_analysis.R, 
+## now move onto other R files, like buffer_analysis.R,
 ## compare_analysis.R, or compare_inside_outside.R

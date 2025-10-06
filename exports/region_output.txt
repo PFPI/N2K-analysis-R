@@ -5,28 +5,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Niederösterreich: 19031.73 ha disturbed
-2. Steiermark: 5065.87 ha disturbed
-3. Oberösterreich: 2531.54 ha disturbed
+1. Niederösterreich: 19691.64 ha disturbed
+2. Burgenland: 3516.35 ha disturbed
+3. Salzburg: 2903.26 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Oberösterreich: 5.24% of forest area disturbed
-2. Niederösterreich: 4.92% of forest area disturbed
-3. Steiermark: 3.33% of forest area disturbed
+1. Niederösterreich: 4.93% of forest area disturbed
+2. Oberösterreich: 4.24% of forest area disturbed
+3. Salzburg: 3.63% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Niederösterreich:
     1. Site AT1201000: 2421.2 ha disturbed (6.1%)
     2. Site AT1211000: 2109.77 ha disturbed (3.7%)
     3. Site AT1203000: 1696.25 ha disturbed (6.7%)
-  In Steiermark:
-    1. Site AT2209000: 2673.55 ha disturbed (4.6%)
+  In Burgenland:
+    1. Site AT1108813: 1199.43 ha disturbed (7%)
     2. Site AT2229000: 980.21 ha disturbed (3.8%)
-    3. Site AT2204000: 264.23 ha disturbed (5%)
+    3. Site AT1114813: 631.67 ha disturbed (5.9%)
+  In Salzburg:
+    1. Site AT2209000: 2673.55 ha disturbed (4.6%)
+    2. Site AT2209003: 43.78 ha disturbed (1.3%)
+    3. Site AT3209022: 37.25 ha disturbed (4.7%)
   In Oberösterreich:
     1. Site AT3111000: 622.42 ha disturbed (4.9%)
     2. Site AT3122000: 577.98 ha disturbed (15.1%)
-    3. Site AT3120000: 428.81 ha disturbed (13.3%)
+    3. Site AT3121000: 396.38 ha disturbed (6.4%)
 
 
 ======================================================
@@ -34,14 +38,14 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Wallonie: 13739.74 ha disturbed
-2. Vlaanderen: 5868.39 ha disturbed
-3. Bruxelles: 49.79 ha disturbed
+1. Wallonie: 13690.04 ha disturbed
+2. Vlaanderen: 5896.88 ha disturbed
+3. Bruxelles: 91.13 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Wallonie: 9.62% of forest area disturbed
-2. Vlaanderen: 4.64% of forest area disturbed
-3. Bruxelles: 2.97% of forest area disturbed
+1. Wallonie: 9.73% of forest area disturbed
+2. Vlaanderen: 4.49% of forest area disturbed
+3. Bruxelles: 2.66% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Wallonie:
@@ -54,8 +58,8 @@
     3. Site BE2200035: 433.2 ha disturbed (13.6%)
   In Bruxelles:
     1. Site BE1000001: 49.39 ha disturbed (3.2%)
-    2. Site BE1000002: 0.32 ha disturbed (0.4%)
-    3. Site BE1000003: 0.09 ha disturbed (0.1%)
+    2. Site BE2400008: 41.34 ha disturbed (2.4%)
+    3. Site BE1000002: 0.32 ha disturbed (0.4%)
 
 
 ======================================================
@@ -63,40 +67,39 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Pazardzhik: 5960.65 ha disturbed
-2. Haskovo: 4582.41 ha disturbed
-3. Burgas: 4521.48 ha disturbed
+1. Blagoevgrad: 7759.29 ha disturbed
+2. Burgas: 7353.92 ha disturbed
+3. Haskovo: 7086.76 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Ruse: 10.05% of forest area disturbed
-2. Silistra: 2.85% of forest area disturbed
-3. Yambol: 2.59% of forest area disturbed
+1. Ruse: 6.49% of forest area disturbed
+2. Vratsa: 4.11% of forest area disturbed
+3. Targovishte: 3.12% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Pazardzhik:
+  In Blagoevgrad:
     1. Site BG0001030: 3205.11 ha disturbed (2.1%)
     2. Site BG0002063: 1530.78 ha disturbed (1.9%)
-    3. Site BG0001389: 1007.66 ha disturbed (1.6%)
-  In Haskovo:
-    1. Site BG0001032: 2024.81 ha disturbed (1.5%)
-    2. Site BG0002021: 1019.97 ha disturbed (1.2%)
-    3. Site BG0000212: 904.42 ha disturbed (1%)
+    3. Site BG0000636: 537.2 ha disturbed (2.5%)
   In Burgas:
     1. Site BG0002043: 1308.16 ha disturbed (3%)
-    2. Site BG0001004: 703.38 ha disturbed (6%)
-    3. Site BG0000219: 659.82 ha disturbed (2%)
+    2. Site BG0002044: 898.27 ha disturbed (2.1%)
+    3. Site BG0000133: 708.26 ha disturbed (2.2%)
+  In Haskovo:
+    1. Site BG0001032: 2024.81 ha disturbed (1.5%)
+    2. Site BG0001031: 1262.74 ha disturbed (1.4%)
+    3. Site BG0002021: 1019.97 ha disturbed (1.2%)
   In Ruse:
-    1. Site BG0002024: 213.92 ha disturbed (14.1%)
-    2. Site BG0000232: 210.79 ha disturbed (13.8%)
-    3. Site BG0000529: 208.46 ha disturbed (29.5%)
-  In Silistra:
-    1. Site BG0000106: 761.23 ha disturbed (2.7%)
-    2. Site BG0002039: 532.63 ha disturbed (2.2%)
-    3. Site BG0000377: 265.54 ha disturbed (7%)
-  In Yambol:
-    1. Site BG0002026: 585.7 ha disturbed (2.8%)
-    2. Site BG0000218: 576.95 ha disturbed (2.7%)
-    3. Site BG0000195: 276.32 ha disturbed (5.5%)
+    1. Site BG0000377: 265.54 ha disturbed (7%)
+    2. Site BG0002030: 256.47 ha disturbed (5.4%)
+    3. Site BG0002024: 213.92 ha disturbed (14.1%)
+  In Vratsa:
+    1. Site BG0000334: 138.28 ha disturbed (6.3%)
+    2. Site BG0000614: 16.71 ha disturbed (1.8%)
+    3. Site BG0000533: 9.19 ha disturbed (2.4%)
+  In Targovishte:
+    1. Site BG0000432: 119.81 ha disturbed (3.1%)
+    2. Site BG0000589: 0 ha disturbed (0%)
 
 
 ======================================================
@@ -104,39 +107,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Osjecko-Baranjska: 8814.71 ha disturbed
-2. Primorsko-Goranska: 6497.73 ha disturbed
-3. Sisacko-Moslavacka: 5938.49 ha disturbed
+1. Osjecko-Baranjska: 10986.72 ha disturbed
+2. Karlovacka: 6460.74 ha disturbed
+3. Vukovarsko-Srijemska: 5715.75 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
 1. Vukovarsko-Srijemska: 9.86% of forest area disturbed
-2. Osjecko-Baranjska: 9.33% of forest area disturbed
-3. Viroviticko-Podravska: 7.27% of forest area disturbed
+2. Osjecko-Baranjska: 7.27% of forest area disturbed
+3. Bjelovarska-Bilogorska: 4.85% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Osjecko-Baranjska:
     1. Site HR1000016: 3714.7 ha disturbed (10.5%)
     2. Site HR2001308: 1478.22 ha disturbed (15.4%)
     3. Site HR2001309: 1076.67 ha disturbed (11.3%)
-  In Primorsko-Goranska:
+  In Karlovacka:
     1. Site HR1000019: 2553.27 ha disturbed (2%)
     2. Site HR5000019: 2492.8 ha disturbed (2%)
-    3. Site HR2001358: 728.35 ha disturbed (2.1%)
-  In Sisacko-Moslavacka:
-    1. Site HR1000004: 2307.58 ha disturbed (3.8%)
-    2. Site HR2000416: 1425.22 ha disturbed (5.1%)
-    3. Site HR2001356: 974.75 ha disturbed (5.8%)
+    3. Site HR2000592: 423.6 ha disturbed (1.8%)
   In Vukovarsko-Srijemska:
     1. Site HR1000006: 2938.82 ha disturbed (9.9%)
     2. Site HR2001414: 2408.84 ha disturbed (9.8%)
     3. Site HR2001415: 354.66 ha disturbed (10.3%)
-  In Viroviticko-Podravska:
-    1. Site HR2001281: 363.85 ha disturbed (8.1%)
-    2. Site HR2001329: 6.06 ha disturbed (1.7%)
-    3. Site HR1000012: 0 ha disturbed (0%)
-    4. Site HR2001004: 0 ha disturbed (0%)
-    5. Site HR2001006: 0 ha disturbed (0%)
-    6. Site HR2001005: 0 ha disturbed (0%)
+  In Bjelovarska-Bilogorska:
+    1. Site HR1000008: 3021.89 ha disturbed (5.6%)
+    2. Site HR1000009: 412.74 ha disturbed (3.3%)
+    3. Site HR2001281: 363.85 ha disturbed (8.1%)
 
 
 ======================================================
@@ -144,32 +140,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Nicosia: 216.73 ha disturbed
-2. Limassol: 188.93 ha disturbed
-3. Paphos: 154.47 ha disturbed
+1. Limassol: 334.53 ha disturbed
+2. Larnaca: 127.81 ha disturbed
+3. Paphos: 110.02 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Limassol: 0.93% of forest area disturbed
-2. Paphos: 0.32% of forest area disturbed
-3. Larnaca: 0.31% of forest area disturbed
+1. Larnaca: 0.54% of forest area disturbed
+2. Limassol: 0.34% of forest area disturbed
+3. Nicosia: 0.28% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Nicosia:
-    1. Site CY2000006: 78.47 ha disturbed (0.2%)
-    2. Site CY2000013: 43.44 ha disturbed (1%)
-    3. Site CY2000004: 37.67 ha disturbed (1.3%)
   In Limassol:
     1. Site CY5000010: 100.98 ha disturbed (1.8%)
-    2. Site CY5000004: 49.21 ha disturbed (0.9%)
-    3. Site CY5000011: 19.49 ha disturbed (0.9%)
+    2. Site CY2000006: 78.47 ha disturbed (0.2%)
+    3. Site CY5000004: 49.21 ha disturbed (0.9%)
+  In Larnaca:
+    1. Site CY2000013: 43.44 ha disturbed (1%)
+    2. Site CY2000004: 37.67 ha disturbed (1.3%)
+    3. Site CY2000015: 20.67 ha disturbed (0.3%)
   In Paphos:
     1. Site CY4000023: 40.19 ha disturbed (0.3%)
     2. Site CY4000010: 29.49 ha disturbed (0.2%)
-    3. Site CY4000020: 24.63 ha disturbed (0.6%)
-  In Larnaca:
-    1. Site CY6000008: 18.97 ha disturbed (0.8%)
-    2. Site CY6000004: 4.32 ha disturbed (0.3%)
-    3. Site CY6000007: 1.62 ha disturbed (0.1%)
+    3. Site CY4000021: 13.32 ha disturbed (0.3%)
+  In Nicosia:
+    1. Site CY4000017: 7.55 ha disturbed (0.5%)
+    2. Site CY2000014: 5.94 ha disturbed (0.3%)
+    3. Site CY2000012: 1.13 ha disturbed (1.4%)
 
 
 ======================================================
@@ -177,36 +173,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Jihočeský: 33459.7 ha disturbed
-2. Zlínský: 15383.21 ha disturbed
-3. Olomoucký: 13729.92 ha disturbed
+1. Jihočeský: 33463.88 ha disturbed
+2. Moravskoslezský: 26716.73 ha disturbed
+3. Ústecký: 10147.19 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Olomoucký: 17.62% of forest area disturbed
-2. Ústecký: 14.78% of forest area disturbed
-3. Kraj Vysočina: 13.53% of forest area disturbed
+1. Ústecký: 16.48% of forest area disturbed
+2. Moravskoslezský: 13.53% of forest area disturbed
+3. Zlínský: 12.04% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Jihočeský:
     1. Site CZ0314024: 11842.84 ha disturbed (10.9%)
     2. Site CZ0311041: 9546.83 ha disturbed (15.6%)
     3. Site CZ0311034: 3884.11 ha disturbed (28.4%)
-  In Zlínský:
+  In Moravskoslezský:
     1. Site CZ0724089: 9550.3 ha disturbed (11.6%)
-    2. Site CZ0724091: 1406.57 ha disturbed (11.4%)
-    3. Site CZ0721023: 1341.47 ha disturbed (8.6%)
-  In Olomoucký:
-    1. Site CZ0711019: 7040.92 ha disturbed (30%)
-    2. Site CZ0714133: 2529.76 ha disturbed (33.4%)
-    3. Site CZ0711016: 1110.09 ha disturbed (5.5%)
+    2. Site CZ0711019: 7040.92 ha disturbed (30%)
+    3. Site CZ0711017: 3811.54 ha disturbed (9.4%)
   In Ústecký:
     1. Site CZ0421006: 5287.12 ha disturbed (25.7%)
     2. Site CZ0424031: 3342.77 ha disturbed (47.5%)
-    3. Site CZ0421004: 492.45 ha disturbed (5.1%)
-  In Kraj Vysočina:
-    1. Site CZ0614131: 261.06 ha disturbed (19.3%)
-    2. Site CZ0610179: 64.69 ha disturbed (23.7%)
-    3. Site CZ0610003: 46.66 ha disturbed (26.7%)
+    3. Site CZ0424127: 462.94 ha disturbed (5.2%)
+  In Zlínský:
+    1. Site CZ0721023: 1341.47 ha disturbed (8.6%)
+    2. Site CZ0721024: 1237.13 ha disturbed (34.5%)
+    3. Site CZ0724429: 432.53 ha disturbed (28.6%)
 
 
 ======================================================
@@ -214,14 +206,14 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Nordjylland: 5226.77 ha disturbed
-2. Midtjylland: 3556.39 ha disturbed
-3. Hovedstaden: 2792.75 ha disturbed
+1. Nordjylland: 5599.89 ha disturbed
+2. Midtjylland: 4138.61 ha disturbed
+3. Hovedstaden: 2794.7 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Nordjylland: 7.61% of forest area disturbed
-2. Midtjylland: 4.65% of forest area disturbed
-3. Hovedstaden: 4.25% of forest area disturbed
+1. Hovedstaden: 3.32% of forest area disturbed
+2. Nordjylland: 1.16% of forest area disturbed
+3. Midtjylland: 0.66% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Nordjylland:
@@ -243,32 +235,40 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Võru: 2082.56 ha disturbed
-2. Pärnu: 1987.6 ha disturbed
-3. Valga: 1647.73 ha disturbed
+1. Harju: 3467.28 ha disturbed
+2. Pärnu: 2363.42 ha disturbed
+3. Saare: 2003.35 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Võru: 6.54% of forest area disturbed
-2. Valga: 5.46% of forest area disturbed
-3. Lääne-Viru: 3.04% of forest area disturbed
+1. Võru: 8.34% of forest area disturbed
+2. Põlva: 5.71% of forest area disturbed
+3. Valga: 3.4% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Võru:
-    1. Site EE0080613: 1397.76 ha disturbed (10.9%)
-    2. Site EE0080671: 314.59 ha disturbed (3.1%)
-    3. Site EE0080672: 84.98 ha disturbed (4.2%)
+  In Harju:
+    1. Site EE0010173: 999.93 ha disturbed (1.8%)
+    2. Site EE0060171: 384.95 ha disturbed (2.1%)
+    3. Site EE0020341: 338.82 ha disturbed (2.5%)
   In Pärnu:
     1. Site EE0040344: 466.27 ha disturbed (3.3%)
-    2. Site EE0040316: 270 ha disturbed (3.4%)
-    3. Site EE0040351: 182.13 ha disturbed (1.8%)
-  In Valga:
+    2. Site EE0080574: 401.95 ha disturbed (1.3%)
+    3. Site EE0040316: 270 ha disturbed (3.4%)
+  In Saare:
+    1. Site EE0040486: 274.96 ha disturbed (2.1%)
+    2. Site EE0040476: 235.01 ha disturbed (2.4%)
+    3. Site EE0040412: 197.09 ha disturbed (1.9%)
+  In Võru:
+    1. Site EE0080613: 1397.76 ha disturbed (10.9%)
+    2. Site EE0080672: 84.98 ha disturbed (4.2%)
+    3. Site EE0080617: 37.49 ha disturbed (4.9%)
+  In Põlva:
     1. Site EE0080401: 1198.58 ha disturbed (6.7%)
+    2. Site EE0080217: 70.66 ha disturbed (8.4%)
+    3. Site EE0080204: 66.56 ha disturbed (3%)
+  In Valga:
+    1. Site EE0080671: 314.59 ha disturbed (3.1%)
     2. Site EE0080471: 109.94 ha disturbed (4.4%)
     3. Site EE0080421: 89.68 ha disturbed (4.1%)
-  In Lääne-Viru:
-    1. Site EE0060209: 212.06 ha disturbed (4.9%)
-    2. Site EE0020205: 95.14 ha disturbed (1.9%)
-    3. Site EE0060207: 54.61 ha disturbed (5.6%)
 
 
 ======================================================
@@ -276,14 +276,14 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Eastern Finland: 9273.63 ha disturbed
-2. Western Finland: 8018.47 ha disturbed
-3. Oulu: 5242.47 ha disturbed
+1. Eastern Finland: 9827.19 ha disturbed
+2. Western Finland: 7361.26 ha disturbed
+3. Oulu: 5104.17 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Southern Finland: 3.41% of forest area disturbed
-2. Eastern Finland: 2.8% of forest area disturbed
-3. Western Finland: 1.97% of forest area disturbed
+1. Eastern Finland: 2.6% of forest area disturbed
+2. Oulu: 1.41% of forest area disturbed
+3. Western Finland: 1.39% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Eastern Finland:
@@ -298,10 +298,6 @@
     1. Site FI1105413: 1034.27 ha disturbed (15%)
     2. Site FI1103829: 465.13 ha disturbed (1.9%)
     3. Site FI1105408: 272.16 ha disturbed (20.4%)
-  In Southern Finland:
-    1. Site FI0100051: 385 ha disturbed (22.5%)
-    2. Site FI0424002: 225.78 ha disturbed (37.4%)
-    3. Site FI0422005: 149.17 ha disturbed (40.5%)
 
 
 ======================================================
@@ -309,36 +305,36 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Centre-Val de Loire: 24967.71 ha disturbed
-2. Occitanie: 24316.7 ha disturbed
-3. Nouvelle-Aquitaine: 23347.16 ha disturbed
+1. Centre-Val de Loire: 26153.21 ha disturbed
+2. Nouvelle-Aquitaine: 25056 ha disturbed
+3. Occitanie: 22198.44 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Centre-Val de Loire: 5.09% of forest area disturbed
-2. Hauts-de-France: 4.69% of forest area disturbed
-3. Grand Est: 3.85% of forest area disturbed
+1. Centre-Val de Loire: 5.16% of forest area disturbed
+2. Grand Est: 4.01% of forest area disturbed
+3. Île-de-France: 3.35% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Centre-Val de Loire:
     1. Site FR2402001: 14918.87 ha disturbed (7.3%)
     2. Site FR2410016: 2810.03 ha disturbed (12%)
     3. Site FR2410018: 2221.26 ha disturbed (10.4%)
-  In Occitanie:
-    1. Site FR9110033: 2410.85 ha disturbed (3.9%)
-    2. Site FR9110105: 1853.54 ha disturbed (7.1%)
-    3. Site FR9112033: 1566.21 ha disturbed (8.3%)
   In Nouvelle-Aquitaine:
     1. Site FR7412003: 9058.21 ha disturbed (18.2%)
     2. Site FR7210078: 845.83 ha disturbed (9.5%)
     3. Site FR7401105: 837.32 ha disturbed (15.9%)
-  In Hauts-de-France:
-    1. Site FR2212001: 962.1 ha disturbed (5.8%)
-    2. Site FR2212005: 470.09 ha disturbed (6.4%)
-    3. Site FR3112001: 441.28 ha disturbed (7.8%)
+  In Occitanie:
+    1. Site FR9110033: 2410.85 ha disturbed (3.9%)
+    2. Site FR9110105: 1853.54 ha disturbed (7.1%)
+    3. Site FR9112033: 1566.21 ha disturbed (8.3%)
   In Grand Est:
     1. Site FR2112013: 6838.12 ha disturbed (14.9%)
     2. Site FR4100171: 1982.04 ha disturbed (20.9%)
     3. Site FR2112011: 1048.86 ha disturbed (1.9%)
+  In Île-de-France:
+    1. Site FR1100795: 619.39 ha disturbed (3.2%)
+    2. Site FR1110795: 619.25 ha disturbed (3.2%)
+    3. Site FR1112011: 437.59 ha disturbed (4.3%)
 
 
 ======================================================
@@ -346,32 +342,36 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Hessen: 33342.66 ha disturbed
-2. Bayern: 29490.81 ha disturbed
-3. Nordrhein-Westfalen: 26857.53 ha disturbed
+1. Hessen: 43235.38 ha disturbed
+2. Bayern: 33920.41 ha disturbed
+3. Niedersachsen: 31704.01 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Nordrhein-Westfalen: 11.7% of forest area disturbed
-2. Thüringen: 9.57% of forest area disturbed
-3. Hessen: 9.16% of forest area disturbed
+1. Nordrhein-Westfalen: 11.34% of forest area disturbed
+2. Hessen: 11.22% of forest area disturbed
+3. Thüringen: 9.87% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Hessen:
-    1. Site DE4917401: 4584.13 ha disturbed (22.3%)
-    2. Site DE5421401: 3341.9 ha disturbed (8.7%)
-    3. Site DE5022401: 2947.17 ha disturbed (14.7%)
+    1. Site DE5312401: 6743.89 ha disturbed (28.3%)
+    2. Site DE4917401: 4584.13 ha disturbed (22.3%)
+    3. Site DE5421401: 3341.9 ha disturbed (8.7%)
   In Bayern:
     1. Site DE6946301: 4409.22 ha disturbed (28.1%)
     2. Site DE6946401: 4394.55 ha disturbed (28.1%)
-    3. Site DE6533471: 1419.31 ha disturbed (4.7%)
+    3. Site DE5535420: 1760.71 ha disturbed (40.8%)
+  In Niedersachsen:
+    1. Site DE4129302: 6723.05 ha disturbed (58.7%)
+    2. Site DE4229402: 6680.12 ha disturbed (59%)
+    3. Site DE4229401: 2906.74 ha disturbed (68%)
   In Nordrhein-Westfalen:
     1. Site DE4514302: 2677.24 ha disturbed (50.9%)
     2. Site DE4419401: 1870.6 ha disturbed (40.5%)
-    3. Site DE4717401: 1810.05 ha disturbed (17.5%)
+    3. Site DE5507401: 1790.52 ha disturbed (9.2%)
   In Thüringen:
     1. Site DE5432401: 3579.18 ha disturbed (40.6%)
     2. Site DE5430401: 2433.35 ha disturbed (18.3%)
-    3. Site DE5535420: 1760.71 ha disturbed (40.8%)
+    3. Site DE5333420: 1360.7 ha disturbed (24.2%)
 
 
 ======================================================
@@ -379,31 +379,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Macedonia and Thrace: 8673.12 ha disturbed
-2. Thessaly and Central Greece: 6084.79 ha disturbed
-3. Epirus and Western Macedonia: 3161.05 ha disturbed
+1. Macedonia and Thrace: 7261.25 ha disturbed
+2. Epirus and Western Macedonia: 6920.16 ha disturbed
+3. Thessaly and Central Greece: 4191.39 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Athos: 4.12% of forest area disturbed
-2. Macedonia and Thrace: 0.93% of forest area disturbed
-3. Thessaly and Central Greece: 0.92% of forest area disturbed
+1. Athos: 3.13% of forest area disturbed
+2. Epirus and Western Macedonia: 0.97% of forest area disturbed
+3. Macedonia and Thrace: 0.78% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Macedonia and Thrace:
     1. Site GR1240009: 869.77 ha disturbed (1.4%)
-    2. Site GR1240008: 629.92 ha disturbed (1.2%)
-    3. Site GR1210001: 598.8 ha disturbed (3.4%)
-  In Thessaly and Central Greece:
+    2. Site GR1140008: 562.1 ha disturbed (1.1%)
+    3. Site GR1220009: 531.6 ha disturbed (0.6%)
+  In Epirus and Western Macedonia:
     1. Site GR1440003: 977.85 ha disturbed (2.7%)
     2. Site GR1440005: 971.55 ha disturbed (2.4%)
-    3. Site GR1430006: 633.91 ha disturbed (3.3%)
-  In Epirus and Western Macedonia:
-    1. Site GR2130011: 635.51 ha disturbed (1.7%)
-    2. Site GR2130002: 496.3 ha disturbed (4.2%)
-    3. Site GR1320002: 258.79 ha disturbed (1.1%)
+    3. Site GR2130011: 635.51 ha disturbed (1.7%)
+  In Thessaly and Central Greece:
+    1. Site GR1430006: 633.91 ha disturbed (3.3%)
+    2. Site GR1420004: 468.68 ha disturbed (1.6%)
+    3. Site GR1420006: 411.77 ha disturbed (2%)
   In Athos:
     1. Site GR1270003: 1319.47 ha disturbed (6.7%)
-    2. Site GR1270015: 0.22 ha disturbed (0%)
+    2. Site GR1270016: 0.52 ha disturbed (0%)
+    3. Site GR1270015: 0.22 ha disturbed (0%)
 
 
 ======================================================
@@ -411,36 +412,40 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Somogy: 14665.22 ha disturbed
-2. Borsod-Abaúj-Zemplén: 8705.83 ha disturbed
-3. Pest: 6016.84 ha disturbed
+1. Bács-Kiskun: 12180.76 ha disturbed
+2. Borsod-Abaúj-Zemplén: 11777.59 ha disturbed
+3. Somogy: 11655.49 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Somogy: 12.33% of forest area disturbed
-2. Tolna: 10.93% of forest area disturbed
-3. Baranya: 8.59% of forest area disturbed
+1. Baranya: 9.97% of forest area disturbed
+2. Zala: 9.07% of forest area disturbed
+3. Hajdú-Bihar: 9.04% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Somogy:
-    1. Site HUDD10008: 3916.54 ha disturbed (14.5%)
-    2. Site HUDD20063: 3521.4 ha disturbed (22.3%)
-    3. Site HUDD10013: 2011.04 ha disturbed (14%)
+  In Bács-Kiskun:
+    1. Site HUDD20032: 2450.47 ha disturbed (14.9%)
+    2. Site HUDD10003: 2383.86 ha disturbed (14.8%)
+    3. Site HUHN20015: 1331.31 ha disturbed (10.8%)
   In Borsod-Abaúj-Zemplén:
     1. Site HUBN10003: 2519.02 ha disturbed (5.3%)
     2. Site HUBN10007: 2404.47 ha disturbed (3%)
-    3. Site HUBN20001: 514.85 ha disturbed (5.7%)
-  In Pest:
-    1. Site HUDI10002: 1549.8 ha disturbed (4.1%)
-    2. Site HUDI20008: 1006.66 ha disturbed (4.5%)
-    3. Site HUDI20039: 737.8 ha disturbed (3.8%)
-  In Tolna:
-    1. Site HUDD20032: 2450.47 ha disturbed (14.9%)
-    2. Site HUDD20040: 509.78 ha disturbed (12.6%)
-    3. Site HUDD20023: 470.48 ha disturbed (7.5%)
+    3. Site HUHN20001: 1223.11 ha disturbed (8.2%)
+  In Somogy:
+    1. Site HUDD10008: 3916.54 ha disturbed (14.5%)
+    2. Site HUDD20063: 3521.4 ha disturbed (22.3%)
+    3. Site HUDD20044: 834.59 ha disturbed (8.7%)
   In Baranya:
-    1. Site HUDD20030: 1033.19 ha disturbed (6.5%)
-    2. Site HUDD20045: 774.49 ha disturbed (9.9%)
-    3. Site HUDD20008: 756.46 ha disturbed (12.7%)
+    1. Site HUDD10013: 2011.04 ha disturbed (14%)
+    2. Site HUDD20016: 1340.52 ha disturbed (13.1%)
+    3. Site HUDD20030: 1033.19 ha disturbed (6.5%)
+  In Zala:
+    1. Site HUBF20046: 1386.11 ha disturbed (19.2%)
+    2. Site HUBF20040: 453.97 ha disturbed (13.8%)
+    3. Site HUBF20049: 339.58 ha disturbed (13.7%)
+  In Hajdú-Bihar:
+    1. Site HUHN20033: 1079.57 ha disturbed (24.2%)
+    2. Site HUHN20032: 919.51 ha disturbed (25.7%)
+    3. Site HUHN20023: 112.92 ha disturbed (29.9%)
 
 
 ======================================================
@@ -448,30 +453,35 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Clare: 6234.88 ha disturbed
-2. Limerick: 5024.14 ha disturbed
+1. Clare: 6297.53 ha disturbed
+2. Kerry: 6130.92 ha disturbed
 3. Laois: 3436.42 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
 1. Laois: 19.44% of forest area disturbed
-2. Limerick: 12.57% of forest area disturbed
-3. Monaghan: 11.16% of forest area disturbed
+2. Limerick: 11.2% of forest area disturbed
+3. Monaghan: 10.96% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Clare:
     1. Site IE0004168: 6150.95 ha disturbed (15.7%)
-    2. Site IE0002312: 32.95 ha disturbed (2.5%)
-    3. Site IE0004058: 18.61 ha disturbed (0.2%)
-  In Limerick:
+    2. Site IE0002165: 34.91 ha disturbed (0.1%)
+    3. Site IE0002312: 32.95 ha disturbed (2.5%)
+  In Kerry:
     1. Site IE0004161: 5000.75 ha disturbed (12.9%)
-    2. Site IE0002036: 19.88 ha disturbed (4.4%)
-    3. Site IE0002037: 2.94 ha disturbed (4.6%)
+    2. Site IE0000365: 581.82 ha disturbed (1.3%)
+    3. Site IE0002185: 124.28 ha disturbed (2.3%)
   In Laois:
     1. Site IE0004160: 3283.73 ha disturbed (23.1%)
     2. Site IE0000412: 131.69 ha disturbed (4.3%)
     3. Site IE0002332: 14 ha disturbed (14.3%)
+  In Limerick:
+    1. Site IE0004165: 2017.05 ha disturbed (14.5%)
+    2. Site IE0000646: 87.47 ha disturbed (2.2%)
+    3. Site IE0002036: 19.88 ha disturbed (4.4%)
   In Monaghan:
     1. Site IE0004167: 257.02 ha disturbed (11.2%)
+    2. Site IE0001786: 0 ha disturbed (0%)
 
 
 ======================================================
@@ -479,14 +489,14 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Toscana: 11573.58 ha disturbed
-2. Lazio: 8483.97 ha disturbed
-3. Veneto: 7894.02 ha disturbed
+1. Toscana: 11039.92 ha disturbed
+2. Lazio: 8810.69 ha disturbed
+3. Trentino-Alto Adige: 7819.69 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Toscana: 4.27% of forest area disturbed
-2. Umbria: 4.02% of forest area disturbed
-3. Lazio: 3.2% of forest area disturbed
+1. Umbria: 6.04% of forest area disturbed
+2. Molise: 3.33% of forest area disturbed
+3. Lazio: 3.13% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Toscana:
@@ -497,14 +507,18 @@
     1. Site IT6030005: 2413.8 ha disturbed (6.1%)
     2. Site IT6030043: 902.88 ha disturbed (3.5%)
     3. Site IT6040043: 728.54 ha disturbed (2.3%)
-  In Veneto:
-    1. Site IT3230089: 2459.17 ha disturbed (5.1%)
+  In Trentino-Alto Adige:
+    1. Site IT3120160: 1721.97 ha disturbed (6.9%)
     2. Site IT3220036: 1006.42 ha disturbed (12.3%)
-    3. Site IT3230006: 746.31 ha disturbed (11%)
+    3. Site IT3120168: 685.91 ha disturbed (6.8%)
   In Umbria:
     1. Site IT5220008: 824.74 ha disturbed (15.4%)
-    2. Site IT5310018: 208.59 ha disturbed (9%)
-    3. Site IT5210040: 193.02 ha disturbed (13%)
+    2. Site IT5210040: 193.02 ha disturbed (13%)
+    3. Site IT5210078: 146.17 ha disturbed (7.5%)
+  In Molise:
+    1. Site IT7228230: 268.91 ha disturbed (1.5%)
+    2. Site IT7212134: 216.88 ha disturbed (5.4%)
+    3. Site IT7222264: 187.43 ha disturbed (13.4%)
 
 
 ======================================================
@@ -512,32 +526,28 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Vidzeme: 16193.13 ha disturbed
-2. Latgale: 10054.35 ha disturbed
-3. Kurzeme: 2529.03 ha disturbed
+1. Latgale: 10689.63 ha disturbed
+2. Vidzeme: 9608.68 ha disturbed
+3. Riga: 8305.33 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Latgale: 7.55% of forest area disturbed
-2. Vidzeme: 7.43% of forest area disturbed
-3. Riga: 3.02% of forest area disturbed
+1. Vidzeme: 9.57% of forest area disturbed
+2. Latgale: 6.1% of forest area disturbed
+3. Riga: 5.27% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Vidzeme:
-    1. Site LV0200100: 5892.11 ha disturbed (8.4%)
-    2. Site LV0600500: 3016.81 ha disturbed (16.8%)
-    3. Site LV0600200: 2535.83 ha disturbed (17.1%)
   In Latgale:
     1. Site LV0600400: 3703.85 ha disturbed (11.7%)
     2. Site LV0303400: 3305.16 ha disturbed (7.6%)
     3. Site LV0600300: 1689.49 ha disturbed (10.8%)
-  In Kurzeme:
-    1. Site LV0305000: 718.55 ha disturbed (11.7%)
-    2. Site LV0302100: 378.58 ha disturbed (4.2%)
-    3. Site LV0518900: 162.84 ha disturbed (3.3%)
+  In Vidzeme:
+    1. Site LV0600500: 3016.81 ha disturbed (16.8%)
+    2. Site LV0600200: 2535.83 ha disturbed (17.1%)
+    3. Site LV0600700: 1947.21 ha disturbed (13.1%)
   In Riga:
-    1. Site LV0600800: 692.5 ha disturbed (8.6%)
-    2. Site LV0200200: 554.96 ha disturbed (2%)
-    3. Site LV0302200: 288.13 ha disturbed (6.3%)
+    1. Site LV0200100: 5892.11 ha disturbed (8.4%)
+    2. Site LV0600800: 692.5 ha disturbed (8.6%)
+    3. Site LV0200200: 554.96 ha disturbed (2%)
 
 
 ======================================================
@@ -545,32 +555,28 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Vilniaus: 19094.49 ha disturbed
-2. Alytaus: 16653.2 ha disturbed
-3. Panevezio: 12206.16 ha disturbed
+1. Alytaus: 19777.26 ha disturbed
+2. Utenos: 17258.33 ha disturbed
+3. Panevezio: 17046.28 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Panevezio: 16.89% of forest area disturbed
-2. Taurages: 14.68% of forest area disturbed
-3. Kauno: 14.26% of forest area disturbed
+1. Panevezio: 16.05% of forest area disturbed
+2. Kauno: 13.2% of forest area disturbed
+3. Alytaus: 10.72% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Vilniaus:
-    1. Site LTMOL0010: 3902.39 ha disturbed (10.5%)
-    2. Site LTSVEB002: 3898.5 ha disturbed (10.5%)
-    3. Site LTSALB002: 2905.99 ha disturbed (21.4%)
   In Alytaus:
     1. Site LTVARB005: 6383.27 ha disturbed (16.9%)
     2. Site LTVAR0017: 6378.44 ha disturbed (17.1%)
-    3. Site LTVAR0036: 670.14 ha disturbed (19.2%)
+    3. Site LTSALB002: 2905.99 ha disturbed (21.4%)
+  In Utenos:
+    1. Site LTMOL0010: 3902.39 ha disturbed (10.5%)
+    2. Site LTSVEB002: 3898.5 ha disturbed (10.5%)
+    3. Site LTIGNB003: 1917.11 ha disturbed (7.2%)
   In Panevezio:
     1. Site LTPAN0006: 5731.72 ha disturbed (21.9%)
     2. Site LTBIRB001: 3144.74 ha disturbed (23.9%)
-    3. Site LTPANB001: 1881.56 ha disturbed (18.8%)
-  In Taurages:
-    1. Site LTJUR0008: 5185.96 ha disturbed (20.8%)
-    2. Site LTTAU0008: 982.53 ha disturbed (10.8%)
-    3. Site LTJUR0009: 129.93 ha disturbed (15.9%)
+    3. Site LTUKMB001: 2539.85 ha disturbed (15.6%)
   In Kauno:
     1. Site LTKEDB003: 1264.77 ha disturbed (27.1%)
     2. Site LTKAIB006: 1041.39 ha disturbed (28.8%)
@@ -582,28 +588,28 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Diekirch: 1818.89 ha disturbed
-2. Luxembourg: 591.46 ha disturbed
-3. Grevenmacher: 358.88 ha disturbed
+1. Diekirch: 2878.68 ha disturbed
+2. Grevenmacher: 285.17 ha disturbed
+3. Luxembourg: 124.98 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Diekirch: 9.7% of forest area disturbed
-2. Luxembourg: 3.4% of forest area disturbed
-3. Grevenmacher: 2.34% of forest area disturbed
+1. Diekirch: 8.97% of forest area disturbed
+2. Grevenmacher: 1.92% of forest area disturbed
+3. Luxembourg: 1.35% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Diekirch:
     1. Site LU0002013: 714.66 ha disturbed (14.4%)
-    2. Site LU0001007: 284.98 ha disturbed (11.6%)
-    3. Site LU0002004: 234.65 ha disturbed (10.7%)
-  In Luxembourg:
-    1. Site LU0001018: 312.86 ha disturbed (7.4%)
-    2. Site LU0001022: 91.02 ha disturbed (4.3%)
-    3. Site LU0001015: 62.58 ha disturbed (4.2%)
+    2. Site LU0001002: 517.35 ha disturbed (11%)
+    3. Site LU0001018: 312.86 ha disturbed (7.4%)
   In Grevenmacher:
-    1. Site LU0001011: 164.75 ha disturbed (5.6%)
+    1. Site LU0001022: 91.02 ha disturbed (4.3%)
     2. Site LU0001029: 41.51 ha disturbed (3%)
     3. Site LU0002016: 35.94 ha disturbed (1%)
+  In Luxembourg:
+    1. Site LU0002017: 36.86 ha disturbed (1.1%)
+    2. Site LU0001028: 18.14 ha disturbed (2.2%)
+    3. Site LU0002009: 17.65 ha disturbed (2.3%)
 
 
 ======================================================
@@ -611,28 +617,30 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Tramuntana: 3.54 ha disturbed
-2. Għawdex: 2.93 ha disturbed
-3. Nofsinhar: 0.64 ha disturbed
+1. Nofsinhar: 4.85 ha disturbed
+2. Għawdex: 3.21 ha disturbed
+3. Ċentrali: 2.38 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Nofsinhar: 0.27% of forest area disturbed
-2. Tramuntana: 0.12% of forest area disturbed
-3. Għawdex: 0.01% of forest area disturbed
+1. Tramuntana: 0.25% of forest area disturbed
+2. Nofsinhar: 0.03% of forest area disturbed
+3. Ċentrali: 0.03% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Tramuntana:
-    1. Site MT0000024: 1.35 ha disturbed (0.1%)
-    2. Site MT0000032: 0.64 ha disturbed (0.3%)
-    3. Site MT0000101: 0.6 ha disturbed (0.1%)
+  In Nofsinhar:
+    1. Site MT0000111: 1.48 ha disturbed (0%)
+    2. Site MT0000024: 1.35 ha disturbed (0.1%)
+    3. Site MT0000032: 0.64 ha disturbed (0.3%)
   In Għawdex:
     1. Site MT0000112: 2.48 ha disturbed (0%)
-    2. Site MT0000037: 0.15 ha disturbed (0.7%)
-    3. Site MT0000017: 0.12 ha disturbed (0.1%)
-  In Nofsinhar:
-    1. Site MT0000018: 0.45 ha disturbed (0.3%)
-    2. Site MT0000031: 0.17 ha disturbed (0.4%)
-    3. Site MT0000033: 0.02 ha disturbed (0.1%)
+    2. Site MT0000103: 0.18 ha disturbed (0.1%)
+    3. Site MT0000037: 0.15 ha disturbed (0.7%)
+  In Ċentrali:
+    1. Site MT0000105: 2.38 ha disturbed (0%)
+  In Tramuntana:
+    1. Site MT0000009: 0.31 ha disturbed (0.6%)
+    2. Site MT0000007: 0.18 ha disturbed (1.2%)
+    3. Site MT0000021: 0.17 ha disturbed (0.2%)
 
 
 ======================================================
@@ -640,14 +648,14 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Gelderland: 11234.38 ha disturbed
-2. Noord-Brabant: 2365.51 ha disturbed
-3. Drenthe: 1699.99 ha disturbed
+1. Gelderland: 11287.23 ha disturbed
+2. Noord-Brabant: 2230.6 ha disturbed
+3. Drenthe: 1703.14 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Drenthe: 7.97% of forest area disturbed
-2. Noord-Brabant: 6.91% of forest area disturbed
-3. Gelderland: 6.73% of forest area disturbed
+1. Drenthe: 7.42% of forest area disturbed
+2. Gelderland: 6.68% of forest area disturbed
+3. Overijssel: 6.38% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Gelderland:
@@ -662,6 +670,10 @@
     1. Site NL9803011: 649.29 ha disturbed (13.7%)
     2. Site NL9802201: 641.35 ha disturbed (14.7%)
     3. Site NL3000070: 161.23 ha disturbed (6.7%)
+  In Overijssel:
+    1. Site NL9801017: 354.13 ha disturbed (13.3%)
+    2. Site NL9803015: 345.13 ha disturbed (21.7%)
+    3. Site NL1000004: 155.44 ha disturbed (18.1%)
 
 
 ======================================================
@@ -669,36 +681,36 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Pomorskie: 57292.54 ha disturbed
-2. Zachodniopomorskie: 57040.97 ha disturbed
-3. Podlaskie: 55987.67 ha disturbed
+1. Lubuskie: 63868.54 ha disturbed
+2. Podlaskie: 55873.84 ha disturbed
+3. Dolnośląskie: 45429.39 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Śląskie: 12.97% of forest area disturbed
-2. Lubuskie: 9.73% of forest area disturbed
-3. Pomorskie: 9.72% of forest area disturbed
+1. Śląskie: 14.74% of forest area disturbed
+2. Kujawsko-Pomorskie: 11.17% of forest area disturbed
+3. Lubuskie: 11.05% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Pomorskie:
-    1. Site PLB220009: 39481.57 ha disturbed (18%)
-    2. Site PLB220001: 4376.42 ha disturbed (14.7%)
-    3. Site PLB220002: 3487.2 ha disturbed (15%)
-  In Zachodniopomorskie:
-    1. Site PLB320019: 10104.18 ha disturbed (8.9%)
-    2. Site PLB300012: 9294.13 ha disturbed (17.8%)
-    3. Site PLB320015: 3931.63 ha disturbed (13.1%)
+  In Lubuskie:
+    1. Site PLB300015: 18221.07 ha disturbed (18.8%)
+    2. Site PLB320016: 14511.24 ha disturbed (11.3%)
+    3. Site PLH320046: 7524.67 ha disturbed (13.9%)
   In Podlaskie:
     1. Site PLH200006: 13078.4 ha disturbed (13.9%)
     2. Site PLB200003: 11564.18 ha disturbed (13.2%)
     3. Site PLB200002: 10113.65 ha disturbed (10.7%)
+  In Dolnośląskie:
+    1. Site PLB020005: 13460.88 ha disturbed (14.3%)
+    2. Site PLH020041: 3757.12 ha disturbed (9%)
+    3. Site PLB020010: 2208.74 ha disturbed (10.7%)
   In Śląskie:
     1. Site PLH240006: 4475 ha disturbed (17.8%)
     2. Site PLB240002: 4400.05 ha disturbed (18%)
     3. Site PLH240005: 4090.95 ha disturbed (23.7%)
-  In Lubuskie:
-    1. Site PLB320016: 14511.24 ha disturbed (11.3%)
-    2. Site PLH320046: 7524.67 ha disturbed (13.9%)
-    3. Site PLH080044: 1438.17 ha disturbed (19.1%)
+  In Kujawsko-Pomorskie:
+    1. Site PLB220009: 39481.57 ha disturbed (18%)
+    2. Site PLH280012: 837.63 ha disturbed (13.5%)
+    3. Site PLH040017: 738.62 ha disturbed (11.8%)
 
 
 ======================================================
@@ -706,36 +718,35 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Faro: 17294.13 ha disturbed
-2. Bragança: 11335.77 ha disturbed
-3. Setúbal: 10924.89 ha disturbed
+1. Beja: 27254.09 ha disturbed
+2. Castelo Branco: 18549.25 ha disturbed
+3. Bragança: 11596.52 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Castelo Branco: 14.13% of forest area disturbed
-2. Setúbal: 12.89% of forest area disturbed
-3. Coimbra: 12.47% of forest area disturbed
+1. Setúbal: 14.07% of forest area disturbed
+2. Castelo Branco: 8.56% of forest area disturbed
+3. Porto: 6.72% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Faro:
+  In Beja:
     1. Site PTCON0012: 10725.52 ha disturbed (5.7%)
     2. Site PTCON0037: 4711.36 ha disturbed (11.1%)
-    3. Site PTCON0057: 1595.05 ha disturbed (6%)
+    3. Site PTZPE0015: 3012.37 ha disturbed (4.1%)
+  In Castelo Branco:
+    1. Site PTCON0004: 6781.68 ha disturbed (12.7%)
+    2. Site PTCON0007: 6292.73 ha disturbed (7.8%)
+    3. Site PTZPE0007: 1847.47 ha disturbed (21.2%)
   In Bragança:
     1. Site PTZPE0003: 3967.85 ha disturbed (6.7%)
     2. Site PTCON0002: 3967.34 ha disturbed (6.6%)
     3. Site PTZPE0037: 1376.75 ha disturbed (4.5%)
   In Setúbal:
     1. Site PTCON0034: 5181.85 ha disturbed (25.2%)
-    2. Site PTCON0033: 2044.73 ha disturbed (6.5%)
-    3. Site PTCON0054: 1554.61 ha disturbed (56.3%)
-  In Castelo Branco:
-    1. Site PTZPE0007: 1847.47 ha disturbed (21.2%)
-    2. Site PTZPE0042: 1343.08 ha disturbed (10.3%)
-    3. Site PTCON0028: 290.01 ha disturbed (10.2%)
-  In Coimbra:
-    1. Site PTCON0060: 1841.09 ha disturbed (19.8%)
-    2. Site PTCON0055: 1712.09 ha disturbed (12%)
-    3. Site PTCON0027: 93.7 ha disturbed (1.8%)
+    2. Site PTCON0054: 1554.61 ha disturbed (56.3%)
+    3. Site PTZPE0011: 958.47 ha disturbed (6.2%)
+  In Porto:
+    1. Site PTCON0003: 2485.82 ha disturbed (6.7%)
+    2. Site PTCON0024: 134.49 ha disturbed (7.5%)
 
 
 ======================================================
@@ -743,32 +754,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Bihor: 19679.95 ha disturbed
-2. Maramureș: 18466.58 ha disturbed
-3. Sibiu: 15441.08 ha disturbed
+1. Alba: 32025.57 ha disturbed
+2. Bistrița-Năsăud: 30477.86 ha disturbed
+3. Harghita: 11307.05 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Suceava: 9.77% of forest area disturbed
-2. Maramureș: 9.13% of forest area disturbed
-3. Bihor: 7.74% of forest area disturbed
+1. Suceava: 10.8% of forest area disturbed
+2. Bistrița-Năsăud: 8.3% of forest area disturbed
+3. Alba: 7.5% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Bihor:
+  In Alba:
     1. Site ROSPA0081: 8662.06 ha disturbed (13.8%)
-    2. Site ROSCI0002: 5792.45 ha disturbed (12.3%)
-    3. Site ROSAC0062: 1276.52 ha disturbed (5.3%)
-  In Maramureș:
-    1. Site ROSAC0124: 7658.11 ha disturbed (13%)
-    2. Site ROSPA0131: 6260.3 ha disturbed (15.4%)
-    3. Site ROSPA0134: 1370.15 ha disturbed (6.8%)
-  In Sibiu:
-    1. Site ROSPA0043: 6440.26 ha disturbed (9%)
-    2. Site ROSAC0085: 6372.9 ha disturbed (8.8%)
-    3. Site ROSPA0099: 2284.09 ha disturbed (1.5%)
+    2. Site ROSPA0043: 6440.26 ha disturbed (9%)
+    3. Site ROSAC0085: 6372.9 ha disturbed (8.8%)
+  In Bistrița-Năsăud:
+    1. Site ROSCI0019: 8387.18 ha disturbed (8%)
+    2. Site ROSAC0124: 7658.11 ha disturbed (13%)
+    3. Site ROSPA0131: 6260.3 ha disturbed (15.4%)
+  In Harghita:
+    1. Site ROSPA0033: 5266.01 ha disturbed (9.8%)
+    2. Site ROSPA0034: 1753.35 ha disturbed (5.1%)
+    3. Site ROSAC0090: 982.88 ha disturbed (9.9%)
   In Suceava:
     1. Site ROSPA0089: 5194.04 ha disturbed (12.7%)
     2. Site ROSCI0328: 2312 ha disturbed (10.9%)
-    3. Site ROSPA0133: 1562.23 ha disturbed (7.8%)
+    3. Site ROSCI0075: 569.48 ha disturbed (9.1%)
 
 
 ======================================================
@@ -776,32 +787,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Žilinský: 29494.56 ha disturbed
-2. Prešovský: 23944.89 ha disturbed
-3. Košický: 17982.78 ha disturbed
+1. Banskobystrický: 33522.92 ha disturbed
+2. Prešovský: 23963.76 ha disturbed
+3. Košický: 13299.83 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Žilinský: 11.01% of forest area disturbed
-2. Prešovský: 9.24% of forest area disturbed
-3. Banskobystrický: 7.25% of forest area disturbed
+1. Žilinský: 9.84% of forest area disturbed
+2. Banskobystrický: 9.68% of forest area disturbed
+3. Prešovský: 9.26% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
-  In Žilinský:
+  In Banskobystrický:
     1. Site SKCHVU018: 8610.2 ha disturbed (17%)
     2. Site SKUEV0310: 4385.89 ha disturbed (26.8%)
-    3. Site SKCHVU008: 3419.6 ha disturbed (9.2%)
+    3. Site SKCHVU017: 2886.9 ha disturbed (18.5%)
   In Prešovský:
     1. Site SKUEV0307: 8229.16 ha disturbed (23.2%)
     2. Site SKCHVU030: 5188.05 ha disturbed (16.9%)
     3. Site SKCHVU051: 4703.23 ha disturbed (15%)
   In Košický:
     1. Site SKCHVU036: 8608.53 ha disturbed (12.3%)
-    2. Site SKCHVU053: 2336.92 ha disturbed (15.6%)
-    3. Site SKCHVU025: 1571.91 ha disturbed (3.3%)
-  In Banskobystrický:
-    1. Site SKCHVU017: 2886.9 ha disturbed (18.5%)
-    2. Site SKUEV0302: 2644.03 ha disturbed (10%)
-    3. Site SKUEV0225: 1656.49 ha disturbed (12.9%)
+    2. Site SKCHVU025: 1571.91 ha disturbed (3.3%)
+    3. Site SKCHVU035: 1410.02 ha disturbed (4.8%)
+  In Žilinský:
+    1. Site SKCHVU008: 3419.6 ha disturbed (9.2%)
+    2. Site SKUEV0288: 1609.52 ha disturbed (33.7%)
+    3. Site SKCHVU050: 1140.56 ha disturbed (11.9%)
 
 
 ======================================================
@@ -809,32 +820,32 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Jugovzhodna Slovenija: 6777.33 ha disturbed
-2. Goriška: 4216.99 ha disturbed
-3. Notranjsko-kraška: 4114.39 ha disturbed
+1. Jugovzhodna Slovenija: 6812.5 ha disturbed
+2. Gorenjska: 6056.61 ha disturbed
+3. Goriška: 4719.18 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Gorenjska: 5.04% of forest area disturbed
-2. Jugovzhodna Slovenija: 4.98% of forest area disturbed
-3. Notranjsko-kraška: 4.93% of forest area disturbed
+1. Notranjsko-kraška: 4.93% of forest area disturbed
+2. Jugovzhodna Slovenija: 4.89% of forest area disturbed
+3. Gorenjska: 4.16% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Jugovzhodna Slovenija:
     1. Site SI3000263: 3216.38 ha disturbed (5.5%)
     2. Site SI5000013: 3068.05 ha disturbed (5.4%)
     3. Site SI3000267: 239.77 ha disturbed (3.4%)
+  In Gorenjska:
+    1. Site SI5000019: 1733.37 ha disturbed (3.7%)
+    2. Site SI5000024: 1239.84 ha disturbed (6.8%)
+    3. Site SI5000001: 976.87 ha disturbed (17.1%)
   In Goriška:
     1. Site SI3000255: 2453.77 ha disturbed (7.7%)
-    2. Site SI3000253: 945.12 ha disturbed (2.2%)
-    3. Site SI5000025: 519.87 ha disturbed (8.9%)
+    2. Site SI5000023: 780.47 ha disturbed (2%)
+    3. Site SI3000276: 562.87 ha disturbed (1.7%)
   In Notranjsko-kraška:
     1. Site SI5000002: 1709.61 ha disturbed (4.6%)
     2. Site SI3000231: 1270.42 ha disturbed (4.4%)
     3. Site SI3000232: 832.29 ha disturbed (9%)
-  In Gorenjska:
-    1. Site SI5000019: 1733.37 ha disturbed (3.7%)
-    2. Site SI5000001: 976.87 ha disturbed (17.1%)
-    3. Site SI3000285: 643.33 ha disturbed (5.8%)
 
 
 ======================================================
@@ -842,40 +853,36 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Castilla y León: 56074.01 ha disturbed
-2. Andalucía: 45871.31 ha disturbed
-3. Extremadura: 26221.28 ha disturbed
+1. Castilla y León: 66911.56 ha disturbed
+2. Andalucía: 51831.6 ha disturbed
+3. Castilla-La Mancha: 27478.87 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Galicia: 6.73% of forest area disturbed
-2. País Vasco: 4.06% of forest area disturbed
-3. La Rioja: 3.63% of forest area disturbed
+1. País Vasco: 4.71% of forest area disturbed
+2. Extremadura: 3.2% of forest area disturbed
+3. Castilla y León: 3.13% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Castilla y León:
-    1. Site ES4150032: 2568.14 ha disturbed (10.6%)
-    2. Site ES4110002: 2120.22 ha disturbed (5.4%)
-    3. Site ES4170116: 1761.24 ha disturbed (7.9%)
+    1. Site ES1120001: 3396.3 ha disturbed (5.2%)
+    2. Site ES0000067: 3248.83 ha disturbed (3.7%)
+    3. Site ES4150032: 2568.14 ha disturbed (10.6%)
   In Andalucía:
     1. Site ES0000051: 7633.28 ha disturbed (7.1%)
     2. Site ES6130007: 4561.52 ha disturbed (7.6%)
     3. Site ES0000049: 4265.41 ha disturbed (3.4%)
-  In Extremadura:
-    1. Site ES0000070: 5472.97 ha disturbed (8%)
+  In Castilla-La Mancha:
+    1. Site ES4250005: 5576.5 ha disturbed (5.2%)
     2. Site ES4320039: 3376.41 ha disturbed (6.8%)
-    3. Site ES0000014: 2062.25 ha disturbed (3.4%)
-  In Galicia:
-    1. Site ES1120001: 3396.3 ha disturbed (5.2%)
-    2. Site ES1120015: 1394.28 ha disturbed (11.2%)
-    3. Site ES1130001: 1165.47 ha disturbed (5.5%)
+    3. Site ES0000164: 2301.1 ha disturbed (4.1%)
   In País Vasco:
     1. Site ES2110009: 856.81 ha disturbed (7.1%)
-    2. Site ES2120016: 328.41 ha disturbed (9.1%)
-    3. Site ES2130009: 302.95 ha disturbed (7.3%)
-  In La Rioja:
-    1. Site ES0000067: 3248.83 ha disturbed (3.7%)
-    2. Site ES2300006: 165.08 ha disturbed (12.4%)
-    3. Site ES0000065: 104.75 ha disturbed (5%)
+    2. Site ES2130009: 302.95 ha disturbed (7.3%)
+    3. Site ES2130006: 212.2 ha disturbed (21.2%)
+  In Extremadura:
+    1. Site ES0000070: 5472.97 ha disturbed (8%)
+    2. Site ES0000014: 2062.25 ha disturbed (3.4%)
+    3. Site ES4320077: 2043.32 ha disturbed (3.4%)
 
 
 ======================================================
@@ -883,40 +890,36 @@
 ======================================================
 
 --- Top 3 Regions by Gross Disturbance (Hectares) ---
-1. Västerbotten: 10710.5 ha disturbed
-2. Värmland: 2707.83 ha disturbed
-3. Norrbotten: 2624.67 ha disturbed
+1. Västerbotten: 9950.04 ha disturbed
+2. Norrbotten: 3417.55 ha disturbed
+3. Värmland: 2640.16 ha disturbed
 
 --- Top 3 Regions by Percent of Forest Disturbed ---
-1. Halland: 8.14% of forest area disturbed
-2. Kronoberg: 7.03% of forest area disturbed
-3. Uppsala: 4.64% of forest area disturbed
+1. Halland: 5.81% of forest area disturbed
+2. Kronoberg: 5.64% of forest area disturbed
+3. Värmland: 4.05% of forest area disturbed
 
 --- Top Disturbed Sites Within These Regions ---
   In Västerbotten:
     1. Site SE0810484: 8354.64 ha disturbed (26.5%)
-    2. Site SE0810435: 340.52 ha disturbed (0.6%)
-    3. Site SE0810080: 332.49 ha disturbed (0.1%)
+    2. Site SE0810434: 245.76 ha disturbed (2.8%)
+    3. Site SE0810436: 127.21 ha disturbed (1.7%)
+  In Norrbotten:
+    1. Site SE0810435: 340.52 ha disturbed (0.6%)
+    2. Site SE0810080: 332.49 ha disturbed (0.1%)
+    3. Site SE0820430: 268.61 ha disturbed (0.2%)
   In Värmland:
     1. Site SE0610178: 2000 ha disturbed (22.3%)
     2. Site SE0610010: 74.19 ha disturbed (4%)
     3. Site SE0610006: 55.8 ha disturbed (0.4%)
-  In Norrbotten:
-    1. Site SE0820430: 268.61 ha disturbed (0.2%)
-    2. Site SE0820282: 214.23 ha disturbed (0.1%)
-    3. Site SE0820130: 153.92 ha disturbed (0.1%)
   In Halland:
-    1. Site SE0510170: 186.37 ha disturbed (8.4%)
-    2. Site SE0510006: 158.75 ha disturbed (26.2%)
-    3. Site SE0510101: 128.77 ha disturbed (22%)
+    1. Site SE0310017: 307.2 ha disturbed (18.1%)
+    2. Site SE0320228: 221.26 ha disturbed (26.9%)
+    3. Site SE0510170: 186.37 ha disturbed (8.4%)
   In Kronoberg:
-    1. Site SE0320228: 221.26 ha disturbed (26.9%)
-    2. Site SE0320231: 160.28 ha disturbed (7.9%)
-    3. Site SE0320224: 58.04 ha disturbed (17.7%)
-  In Uppsala:
-    1. Site SE0210277: 180.32 ha disturbed (10.3%)
-    2. Site SE0210008: 129.01 ha disturbed (10.4%)
-    3. Site SE0210155: 76.27 ha disturbed (31.3%)
+    1. Site SE0320231: 160.28 ha disturbed (7.9%)
+    2. Site SE0320224: 58.04 ha disturbed (17.7%)
+    3. Site SE0320105: 57.76 ha disturbed (4.7%)
 
 
 ======================================================
@@ -924,25 +927,25 @@
 ======================================================
 
 --- Top 10 Regions by Gross Disturbance (Hectares) ---
-1. Pomorskie (Poland): 57292.54 ha disturbed
-2. Zachodniopomorskie (Poland): 57040.97 ha disturbed
-3. Castilla y León (Spain): 56074.01 ha disturbed
-4. Podlaskie (Poland): 55987.67 ha disturbed
-5. Warmińsko-Mazurskie (Poland): 46672.97 ha disturbed
-6. Andalucía (Spain): 45871.31 ha disturbed
-7. Dolnośląskie (Poland): 39800.97 ha disturbed
-8. Jihočeský (Czechia): 33459.7 ha disturbed
-9. Hessen (Germany): 33342.66 ha disturbed
-10. Lubuskie (Poland): 33110.36 ha disturbed
+1. Castilla y León (Spain): 66911.56 ha disturbed
+2. Lubuskie (Poland): 63868.54 ha disturbed
+3. Podlaskie (Poland): 55873.84 ha disturbed
+4. Andalucía (Spain): 51831.6 ha disturbed
+5. Dolnośląskie (Poland): 45429.39 ha disturbed
+6. Kujawsko-Pomorskie (Poland): 44581.76 ha disturbed
+7. Hessen (Germany): 43235.38 ha disturbed
+8. Mazowieckie (Poland): 41932.69 ha disturbed
+9. Bayern (Germany): 33920.41 ha disturbed
+10. Banskobystrický (Slovakia): 33522.92 ha disturbed
 
 --- Top 10 Regions by Percent of Forest Disturbed ---
 1. Laois (Ireland): 19.44% of forest area disturbed
-2. Olomoucký (Czechia): 17.62% of forest area disturbed
-3. Panevezio (Lithuania): 16.89% of forest area disturbed
-4. Ústecký (Czechia): 14.78% of forest area disturbed
-5. Taurages (Lithuania): 14.68% of forest area disturbed
-6. Kauno (Lithuania): 14.26% of forest area disturbed
-7. Castelo Branco (Portugal): 14.13% of forest area disturbed
-8. Kraj Vysočina (Czechia): 13.53% of forest area disturbed
-9. Śląskie (Poland): 12.97% of forest area disturbed
-10. Setúbal (Portugal): 12.89% of forest area disturbed
+2. Ústecký (Czechia): 16.48% of forest area disturbed
+3. Panevezio (Lithuania): 16.05% of forest area disturbed
+4. Śląskie (Poland): 14.74% of forest area disturbed
+5. Setúbal (Portugal): 14.07% of forest area disturbed
+6. Moravskoslezský (Czechia): 13.53% of forest area disturbed
+7. Kauno (Lithuania): 13.2% of forest area disturbed
+8. Zlínský (Czechia): 12.04% of forest area disturbed
+9. Jihočeský (Czechia): 11.67% of forest area disturbed
+10. Nordrhein-Westfalen (Germany): 11.34% of forest area disturbed

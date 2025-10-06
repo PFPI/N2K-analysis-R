@@ -29,6 +29,8 @@ site_disturbance_data_path <- "analysis_outputs/full_disturbance_and_forest_area
 n2k_gpkg_path <- "D:/GIS/Data/Raw Files/2024-05 Natura 2000 Europe/eea_v_3035_100_k_natura2000_p_2022_v01_r00/Natura2000_end2022.gpkg"
 n2k_layername <- "NaturaSite_polygon"
 gadm_base_path <- "D:/GIS/Data/Political Boundaries/EU Subdivisions" # The main folder
+sites_with_regions_csv_path <- "D:/gitprojects/_R/2025-08 N2K Analysis RebuildR/imports/Natura2000_v2022_WITH_REGIONS.csv"
+
 
 # Target CRS
 target_crs <- "EPSG:3035"
@@ -46,34 +48,13 @@ message("--- Part 1: Loading Data ---")
 message("Loading site-level disturbance data...")
 site_data <- read_csv(site_disturbance_data_path, show_col_types = FALSE)
 
-# 1b: Load N2K site geometries. We'll use their centroids for the join.
-message("Loading Natura 2000 site geometries...")
-n2k_sites_sf <- st_read(n2k_gpkg_path, layer = n2k_layername) %>%
-  select(SITECODE) %>%
-  st_transform(crs = target_crs) %>%
-  st_make_valid()
+# 1b: Load the pre-joined site and region data from your CSV
+message("Loading pre-processed site-to-region lookup table...")
+# This file should contain SITECODE, COUNTRY, NAME_1, etc.
+sites_with_regions <- read_csv(sites_with_regions_csv_path, show_col_types = FALSE)
 
-# Create centroids for a clean spatial join
-n2k_centroids <- st_centroid(n2k_sites_sf)
+message("Data loading complete.")
 
-# 1c: Find all GADM Level 1 shapefiles
-message("Finding all GADM Level 1 regional boundaries...")
-country_folders <- list.dirs(gadm_base_path, recursive = FALSE, full.names = TRUE)
-
-shapefile_paths <- map(country_folders, ~ list.files(
-    path = .x,
-    pattern = "gadm41_.*_1\\.shp$",
-    full.names = TRUE,
-    recursive = TRUE
-  )) %>%
-  list_flatten() %>%
-  unlist()
-
-if (length(shapefile_paths) == 0) {
-  stop("No GADM Level 1 shapefiles found! Check 'gadm_base_path' and file pattern.")
-}
-
-message(paste("Found", length(shapefile_paths), "regional shapefiles. Processing one country at a time..."))
 
 # --- Part 2: Spatially Join N2K Sites to Regions (Iteratively) --- #
 message("\n--- Part 2: Joining N2K sites to regions ---")
@@ -140,16 +121,17 @@ glimpse(all_sites_with_regions)
 # --- Part 3: Regional Analysis and Ranking --- #
 message("\n--- Part 3: Aggregating disturbance data by region ---")
 
-# First, ensure there are no duplicate SITECODEs in our region lookup table
-# This can happen if a site centroid falls exactly on a boundary
-sites_with_region_unique <- all_sites_with_regions %>%
-  distinct(SITECODE, .keep_all = TRUE)
+# Select only the columns we need for the join from your pre-processed file
+# (Assuming your CSV has these columns: SITECODE, COUNTRY, NAME_1)
+region_lookup <- sites_with_regions %>%
+  select(SITECODE, COUNTRY, NAME_1) %>%
+  distinct(SITECODE, .keep_all = TRUE) # Keep distinct just in case
 
 # Join the regional information back to the main site disturbance data
 full_regional_data <- site_data %>%
-  left_join(sites_with_region_unique, by = "SITECODE") %>%
+  left_join(region_lookup, by = "SITECODE") %>%
   # Filter out any sites we couldn't match to a region
-  filter(!is.na(NAME_1))
+  filter(!is.na(NAME_1) & !is.na(COUNTRY))
 
 # (a) Which regions are the most disturbed?
 # Aggregate the data by country and region to get total disturbance
@@ -165,8 +147,11 @@ regional_summary <- full_regional_data %>%
     percent_disturbed = (total_disturbed_ha / total_forest_ha) * 100
   ) %>%
   # Handle cases with zero forest area to avoid NaN results
-  mutate(percent_disturbed = ifelse(total_forest_ha == 0, 0, percent_disturbed))
+  mutate(percent_disturbed = ifelse(total_forest_ha == 0, 0, percent_disturbed)) %>%
 
+ # --- ADD THIS LINE TO ROUND THE NUMBERS ---
+  mutate(across(where(is.numeric), ~ round(.x, 2)))
+  
 message("Regional aggregation complete.")
 glimpse(regional_summary)
 
