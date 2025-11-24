@@ -158,6 +158,17 @@ final_rf_model <- randomForest(x = predictors,
 cat("Final model has been trained on the full dataset.\n")
 
 
+# Print the model summary
+print(final_rf_model)
+importance(final_rf_model)
+# Make predictions on the testing set
+predictions <- predict(final_rf_model, testing_set)
+
+# Evaluate model performance using a confusion matrix
+confusionMatrix <- confusionMatrix(predictions, testing_set$high_disturbance)
+print(confusionMatrix)
+
+
 # --- 5. GENERATE PREDICTIONS FOR ALL SITES ---
 
 # Use the trained model to predict on the 'predictors' data frame ONLY.
@@ -217,3 +228,9 @@ write.csv(region_summary, "analysis_outputs/region_risk_summary.csv", row.names 
 
 cat("\n\nRegional summary complete.\n")
 cat("A new file named 'region_risk_summary.csv' has been created.\n")
+
+
+
+### Trying to understand RF outputs
+library(randomForestExplainer)
+explain_forest(final_rf_model)

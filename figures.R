@@ -47,8 +47,8 @@ disturbance_summary_table <- full_join(
 summary_gt <- disturbance_summary_table %>%
   gt() %>%
   tab_header(
-    title = "Annual Forest Disturbance Summary",
-    subtitle = "Year-over-year analysis for Natura 2000 sites and 1-km buffer zones."
+    # title = "Annual Forest Disturbance Summary",
+    # subtitle = "Year-over-year analysis for Natura 2000 sites and 1-km buffer zones."
   ) %>%
   # Format numbers for readability
   fmt_number(
@@ -96,8 +96,8 @@ figure2_plot <- ggplot(disturbance_summary_long, aes(x = year, y = Area_ha, colo
   
   scale_y_continuous(labels = label_number(scale = 1e-3, suffix = "k")) +
   labs(
-    title = "Annual Forest Disturbance Inside and Outside Natura 2000 Sites",
-    subtitle = "Disturbance has shown a significant positive trend in both protected and unprotected areas.",
+    # title = "Annual Forest Disturbance Inside and Outside Natura 2000 Sites",
+    # subtitle = "Disturbance has shown a significant positive trend in both protected and unprotected areas.",
     x = "Year",
     y = "Area of Forest Disturbance (hectares)",
     color = "Location"
@@ -135,8 +135,8 @@ figure3_plot <- country_summary_for_plot %>%
   geom_bar(stat = "identity", fill = "#009E73") +
   coord_flip() + # Flip coordinates to make country names readable
   labs(
-    title = "Forest Disturbance in Natura 2000 Sites as a Percentage of Total Natura 2000 Forest Area",
-    subtitle = "Ranking by proportional impact highlights the most-affected member states.",
+    # title = "Forest Disturbance in Natura 2000 Sites as a Percentage of Total Natura 2000 Forest Area",
+    # subtitle = "Ranking by proportional impact highlights the most-affected member states.",
     x = "Member State",
     y = "Disturbance as % of Natura 2000 Forest Area"
   ) +
@@ -170,8 +170,8 @@ figure4_plot <- country_summary_gross %>%
   scale_y_continuous(labels = label_number(scale = 1e-3, suffix = "k")) +
   
   labs(
-    title = "Gross Forest Disturbance in Natura 2000 Sites by Member State",
-    subtitle = "Ranking by total hectares disturbed (2001-2023).",
+    # title = "Gross Forest Disturbance in Natura 2000 Sites by Member State",
+    # subtitle = "Ranking by total hectares disturbed (2001-2023).",
     x = "Member State",
     y = "Total Area of Forest Disturbance (hectares)"
   ) +

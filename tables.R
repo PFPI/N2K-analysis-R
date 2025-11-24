@@ -54,7 +54,7 @@ table1 <- final_summary %>%
   tab_source_note(source_note = "Data derived from Hansen et al. Global Forest Change and EEA Natura 2000 boundaries.")
 
 print(table1)
-
+gtsave(table1, "plots/table1.docx")
 
 # --- Table 2: Visual Verification Results ---
 # This table remains unchanged as it is derived from the manuscript text.
@@ -74,7 +74,7 @@ table2 <- verification_data %>%
   tab_source_note(source_note = "Based on manual classification of high-resolution satellite imagery.")
 
 print(table2)
-
+gtsave(table2, "plots/table2.docx")
 
 # --- Table 3: Top 10 Most Disturbed Natura 2000 Sites ---
 # This table is corrected to use the available SITECODE instead of SITENAME.
@@ -97,3 +97,4 @@ table3 <- disturbance_by_site %>%
   fmt_number(columns = 3, decimals = 0)
 
 print(table3)
+gtsave(table3, "plots/table3.docx")
