@@ -13,7 +13,7 @@ if (!dir.exists("plots/regional_plots")) {
 }
 
 # Load the wide-format data
-disturbance_data_wide <- read_csv("exports/n2k_disturbance_r_results_wide_format.csv")
+disturbance_data_wide <- read_csv("imports/n2k_disturbance_r_results_wide_format.csv")
 
 # Reshape the data from wide to long format to make it plottable
 # We are only interested in the columns containing absolute hectares ('haYYYY')

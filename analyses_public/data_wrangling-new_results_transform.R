@@ -14,7 +14,7 @@ library(sf)
 cat("--- Loading required data ---\n")
 
 # Load the new R-based results (long format)
-new_results_path <- "exports/n2k_disturbance_by_year_no_fire.csv"
+new_results_path <- "imports/n2k_disturbance_by_year_no_fire.csv"
 new_results <- read_csv(new_results_path, show_col_types = FALSE)
 
 # Load the old ArcGIS results to get metadata and target column structure
@@ -112,6 +112,6 @@ final_output <- recreated_data %>%
   select(any_of(names(old_results)))
 
 # Export to a new CSV file
-output_path <- "exports/n2k_disturbance_r_results_wide_format.csv"
+output_path <- "csvs/n2k_disturbance_r_results_wide_format.csv"
 write_csv(final_output, output_path, na = "")
 cat(paste("\n--- Transformation complete. File saved to:", output_path, "---\n"))

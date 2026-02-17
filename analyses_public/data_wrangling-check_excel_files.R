@@ -23,7 +23,7 @@ str(vectorized_df)
 
 ## use intersected, it has site info. 
 ## get the sitecodes we want to pull from because those are correct
-sitecodes_file <- "analysis_outputs/sampling/visual_verification_points_all_regions.csv" #nolint
+sitecodes_file <- "importsisual_verification_points_all_regions.csv" #nolint
 sitecodes_df <- read.csv(sitecodes_file)
 head(sitecodes_df)
 sitecodes_to_filter_by <- unique(sitecodes_df$SITECODE)
@@ -34,7 +34,7 @@ str(filtered_df)
 
 sliced_df <- filtered_df %>% group_by(SITECODE) %>% slice_sample(n = 20) %>% ungroup()
 head(sliced_df)
-write.csv(sliced_df, "exports/new_sampled_sites.csv")
+write.csv(sliced_df, "csvs/new_sampled_sites.csv")
 unique(filtered_df$MS)
 unique(sitecodes_df$COUNTRY)
 

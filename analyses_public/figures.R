@@ -91,6 +91,7 @@ disturbance_summary_long <- disturbance_summary_wide %>%
 # Create the plot using our new long-format summary table
 figure2_plot <- ggplot(disturbance_summary_long, aes(x = year, y = Area_ha, color = Location)) +
   geom_line(linewidth = 1.2) +
+  geom_point(size = 3) + # Adds points to the solid lines (raw data)
   geom_smooth(method = "lm", se = FALSE, linetype = "dashed") +
   scale_color_manual(values = c("Inside Natura 2000" = "#0072B2", "1-km Buffer Zone" = "#D55E00")) +
   

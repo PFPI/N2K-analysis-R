@@ -28,7 +28,7 @@ gfc_filepath <- "D:/GIS/Projects/N2k-EU/Europe_LossYear_2023_v1_1.tif"
 
 effis_filepath <- "D:/GIS/Data/Raw Files/2024-05 Natura 2000 Europe/effis-2024-05/modis.ba.poly.shp" # nolint: line_length_linter.
 
-output_dir <- "exports"
+output_dir <- "csvs"
 if (!dir.exists(output_dir)) {
   dir.create(output_dir)
 }

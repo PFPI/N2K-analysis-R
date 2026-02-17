@@ -30,8 +30,8 @@ library(trend) # For mk.test and sens.slope
 # --- Configuration --- #
 
 # Input data paths
-n2k_disturbance_path <- "exports/n2k_disturbance_by_year_no_fire.csv"
-buffer_disturbance_path <- "exports/n2k_buffer_disturbance_by_year_no_fire.csv"
+n2k_disturbance_path <- "imports/n2k_disturbance_by_year_no_fire.csv"
+buffer_disturbance_path <- "imports/n2k_buffer_disturbance_by_year_no_fire.csv"
 n2k_gpkg_path <- "D:/GIS/Data/Raw Files/2024-05 Natura 2000 Europe/eea_v_3035_100_k_natura2000_p_2022_v01_r00/Natura2000_end2022.gpkg" # nolint
 n2k_layername <- "NaturaSite_polygon"
 
@@ -42,7 +42,7 @@ gfc_lossyear_path <- "D:/GIS/Projects/N2k-EU/Europe_LossYear_2023_v1_1.tif"
 target_crs <- "EPSG:3035"
 
 # Output directories
-output_dir <- "analysis_outputs"
+output_dir <- "csvs"
 if (!dir.exists(output_dir)) dir.create(output_dir)
 rdata_dir <- "rdata"
 if (!dir.exists(rdata_dir)) dir.create(rdata_dir)
@@ -217,12 +217,12 @@ analysis_df <- forest_areas %>%
   )
 
 glimpse(analysis_df)
-write.csv(analysis_df, "exports/intermediate_cio2-3_analysis.csv")
+write.csv(analysis_df, "csvs/intermediate_cio2-3_analysis.csv")
 
 # --- Part 3: Pan-European Statistical Analysis --- #
 message("\n--- Part 3: Performing Pan-European Analysis ---")
 
-analysis_df <- read.csv("exports/intermediate_cio2-3_analysis.csv")
+analysis_df <- read.csv("csvs/intermediate_cio2-3_analysis.csv")
 # Aggregate all data to the pan-European level
 pan_europe_summary <- analysis_df %>%
   summarise(
@@ -256,7 +256,7 @@ odds_ratio_eu <- (a / b) / (c / d)
 odds_ratio_disturbed <- (c / d) / (a / b)
 
 
-save_output <- function(msg_string, file_path = "exports/output.txt") {
+save_output <- function(msg_string, file_path = "summaries/ORs_and_chisquares.txt") {
   cat(msg_string, file = file_path, append = TRUE)
 }
 
@@ -310,17 +310,21 @@ message("Odds Ratio and explanation can be found in exports/output.txt")
 message("\n--- Trend Analysis (Pan-European) ---")
 save_output("Pan European Analysis: Slope Tests\n")
 
+# Determine range of years to ensure complete time series
+all_years <- min(disturbance_inside$year, na.rm = TRUE):max(disturbance_inside$year, na.rm = TRUE)
 
-# disturbance_inside <- read_csv(n2k_disturbance_path, show_col_types = FALSE)
-# disturbance_buffer <- read_csv(buffer_disturbance_path, show_col_types = FALSE)
-
-# Prepare time series data
+# Prepare time series data (Pan-EU)
 ts_inside <- disturbance_inside %>%
   group_by(year) %>%
-  summarise(total_ha = sum(disturbed_ha))
+  summarise(total_ha = sum(disturbed_ha)) %>%
+  # Fill missing years with 0
+  complete(year = all_years, fill = list(total_ha = 0))
+
 ts_buffer <- disturbance_buffer %>%
   group_by(year) %>%
-  summarise(total_ha = sum(disturbed_ha))
+  summarise(total_ha = sum(disturbed_ha)) %>%
+  # Fill missing years with 0
+  complete(year = all_years, fill = list(total_ha = 0))
 
 # Trend test for INSIDE
 mk_inside <- mk.test(ts_inside$total_ha)
@@ -353,21 +357,23 @@ ms_summary <- analysis_df %>%
   # Only test states with area in both zones
   filter(forest_ha_inside > 0, forest_ha_buffer > 0) 
 
- write.csv(ms_summary, "exports/intermediate_step4.csv")
-## Originally showing no disturbed HA in buffers in AT or BE.
-## Made a few edits to buffer_analysis.R and re-ran to get corrections.
+ write.csv(ms_summary, "csvs/intermediate_step4.csv")
 
 # For efficiency, pre-aggregate the time series data for trend analysis
 ms_ts_inside <- disturbance_inside %>%
   mutate(member_state = substr(SITECODE, 1, 2)) %>%
   filter(year != 2000) %>%
   group_by(member_state, year) %>%
-  summarise(total_ha = sum(disturbed_ha, na.rm = TRUE), .groups = "drop")
+  summarise(total_ha = sum(disturbed_ha, na.rm = TRUE), .groups = "drop") %>%
+  # IMPORTANT: Fill missing years for each country
+  complete(member_state, year = all_years, fill = list(total_ha = 0))
 
 ms_ts_buffer <- disturbance_buffer %>%
   mutate(member_state = substr(SITECODE, 1, 2)) %>%
   group_by(member_state, year) %>%
-  summarise(total_ha = sum(disturbed_ha, na.rm = TRUE), .groups = "drop")
+  summarise(total_ha = sum(disturbed_ha, na.rm = TRUE), .groups = "drop") %>%
+  # IMPORTANT: Fill missing years for each country
+  complete(member_state, year = all_years, fill = list(total_ha = 0))
 
 
 # Function to perform tests for one member state
@@ -387,11 +393,12 @@ run_ms_analysis <- function(df_row, ts_data_in, ts_data_out) {
   ms_code <- df_row$member_state
   ts_in <- ts_data_in %>% filter(member_state == ms_code)
   ts_out <- ts_data_out %>% filter(member_state == ms_code)
-    
-  mk_in_p <- if(nrow(ts_in) > 1) mk.test(ts_in$total_ha)$p.value else NA
-  sen_in_slope <- if(nrow(ts_in) > 1) sens.slope(ts_in$total_ha)$estimates else NA
-  mk_out_p <- if(nrow(ts_out) > 1) mk.test(ts_out$total_ha)$p.value else NA
-  sen_out_slope <- if(nrow(ts_out) > 1) sens.slope(ts_out$total_ha)$estimates else NA
+  
+  # Check if we have enough data points (years) to run the test
+  mk_in_p <- if(nrow(ts_in) > 2) mk.test(ts_in$total_ha)$p.value else NA
+  sen_in_slope <- if(nrow(ts_in) > 2) sens.slope(ts_in$total_ha)$estimates else NA
+  mk_out_p <- if(nrow(ts_out) > 2) mk.test(ts_out$total_ha)$p.value else NA
+  sen_out_slope <- if(nrow(ts_out) > 2) sens.slope(ts_out$total_ha)$estimates else NA
   
   return(tibble(
     member_state = ms_code,
@@ -411,20 +418,41 @@ ms_results <- bind_rows(lapply(
 ))
 
 message("\n--- Member State Results Summary ---")
-print(ms_results, n = 30)
-save_output(paste(capture.output(print(ms_results, n = 30)), collapse = "\n"))
+# Use width = Inf to ensure all columns (including buffer stats) are printed
+print(ms_results, n = 30, width = Inf)
+save_output(paste(capture.output(print(ms_results, n = 30, width = Inf)), collapse = "\n"))
 
 
-# Add these lines
+# Generate Detailed Text Output
 for (i in 1:nrow(ms_results)) {
   row <- ms_results[i, ]
+  
+  or_val <- row$odds_ratio
+  
+  # Base interpretation strings
+  interp_line1 <- paste0("  - Interpretation: For every one instance of disturbance in the buffer, there are ", round(or_val, 3), " instances in the site.")
+  
+  # Detailed Interpretation Logic (matching Pan-European section)
+  interp_line2 <- ""
+  if (!is.na(or_val)) {
+    if (or_val < 1) {
+      pct_val <- round(or_val / (or_val + 1), 3) * 100
+      interp_line2 <- paste0("  - A protected forest is ", pct_val, 
+                             " percent less likely to be disturbed compared to an unprotected forest.")
+    } else {
+      pct_val <- round(or_val / (or_val + 1), 3) * 100
+      interp_line2 <- paste0("  - A protected forest is ", pct_val, 
+                             " percent more likely to be disturbed compared to an unprotected forest.")
+    }
+  }
 
   # Format the output string
   output_string <- paste0(
     "\n\n--- Analysis for ", row$member_state, " ---\n",
     "Chi-square p-value: ", round(row$chi2_p_value, 4), "\n",
-    "Odds Ratio (Inside/Buffer): ", round(row$odds_ratio, 3), "\n",
-    "  - Interpretation: For every one instance of disturbance in the buffer, there are ", round(row$odds_ratio, 3), " instances in the site.\n",
+    "Odds Ratio (Inside/Buffer): ", round(or_val, 3), "\n",
+    interp_line1, "\n",
+    interp_line2, "\n",
     "Trend Inside - p-value: ", round(row$mk_p_inside, 4), ", slope: ", round(row$sens_slope_inside, 2), " ha/yr\n",
     "Trend Buffer - p-value: ", round(row$mk_p_buffer, 4), ", slope: ", round(row$sens_slope_buffer, 2), " ha/yr\n"
   )

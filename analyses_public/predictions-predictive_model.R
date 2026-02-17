@@ -15,13 +15,13 @@ library(knitr)
 
 # Load the core datasets from your analysis outputs.
 # This file contains the disturbance data for each N2K site.
-disturbance_by_site <- read.csv("analysis_outputs/full_disturbance_and_forest_area_by_site.csv")
+disturbance_by_site <- read.csv("imports/full_disturbance_and_forest_area_by_site.csv")
 
 # This file contains data on the 1-km buffer zones around the sites.
-buffer_data <- read.csv("analysis_outputs/n2k_and_buffer_forest_area.csv")
+buffer_data <- read.csv("imports/n2k_and_buffer_forest_area.csv")
 
 # This file contains the region information
-region_data <- read.csv("imports/NATURA2000_v2022_WITH_REGIONS.csv")
+region_data <- read.csv("imports/Natura2000_v2022_WITH_REGIONS.csv")
 
 # Merge the two datasets to combine site and buffer information.
 # We'll join them by the SITECODE, which is the unique identifier for each Natura 2000 site.
@@ -193,7 +193,7 @@ head(prioritized_risk_list)
   # --- 6. SAVE THE RESULTS ---
 
 # Save this prioritized list to a new CSV file.
-write.csv(prioritized_risk_list, "analysis_outputs/prioritized_disturbance_risk_list.csv", row.names = FALSE)
+write.csv(prioritized_risk_list, "csvs/prioritized_disturbance_risk_list.csv", row.names = FALSE)
 
 cat("\nPrediction complete.\n")
 cat("A new file named 'prioritized_disturbance_risk_list.csv' has been created.\n")
@@ -224,7 +224,7 @@ cat("\n\nSummary of Predicted High-Risk Sites by Region (top 20):\n\n")
 print(head(region_summary, 20))
 
 # Save the regional summary table to a new CSV file.
-write.csv(region_summary, "analysis_outputs/region_risk_summary.csv", row.names = FALSE)
+write.csv(region_summary, "csvs/region_risk_summary.csv", row.names = FALSE)
 
 cat("\n\nRegional summary complete.\n")
 cat("A new file named 'region_risk_summary.csv' has been created.\n")

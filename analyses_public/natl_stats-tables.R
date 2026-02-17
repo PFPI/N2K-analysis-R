@@ -8,9 +8,9 @@ library(readr)
 
 # Load the necessary files with correct column names
 # This file contains the detailed site-by-site data.
-disturbance_by_site <- read_csv("analysis_outputs/full_disturbance_and_forest_area_by_site.csv")
+disturbance_by_site <- read_csv("imports/full_disturbance_and_forest_area_by_site.csv")
 # This file contains the pre-calculated statistical trend data (Sen's Slope).
-member_state_stats <- read_csv("analysis_outputs/member_state_statistical_summary.csv")
+member_state_stats <- read_csv("imports/member_state_statistical_summary.csv")
 
 # Summarize the site data by member state
 country_summary <- disturbance_by_site %>%
@@ -54,7 +54,7 @@ table1 <- final_summary %>%
   tab_source_note(source_note = "Data derived from Hansen et al. Global Forest Change and EEA Natura 2000 boundaries.")
 
 print(table1)
-gtsave(table1, "plots/table1.docx")
+gtsave(table1, "tables/t1-forest_disturbance_by_member_state.docx")
 
 # --- Table 2: Visual Verification Results ---
 # This table remains unchanged as it is derived from the manuscript text.
@@ -74,7 +74,7 @@ table2 <- verification_data %>%
   tab_source_note(source_note = "Based on manual classification of high-resolution satellite imagery.")
 
 print(table2)
-gtsave(table2, "plots/table2.docx")
+gtsave(table2, "tables/t2-visual_verification_disturbance_events.docx")
 
 # --- Table 3: Top 10 Most Disturbed Natura 2000 Sites ---
 # This table is corrected to use the available SITECODE instead of SITENAME.
@@ -97,4 +97,4 @@ table3 <- disturbance_by_site %>%
   fmt_number(columns = 3, decimals = 0)
 
 print(table3)
-gtsave(table3, "plots/table3.docx")
+gtsave(table3, "tables/t3-top_10_n2k_by_gross_disturbed_area.docx")

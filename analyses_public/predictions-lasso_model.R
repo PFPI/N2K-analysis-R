@@ -13,9 +13,9 @@ library(caret)  # For the confusion matrix and data splitting
 # --- 2. DATA LOADING AND PREPARATION (This section is identical to your script) ---
 
 # Load the core datasets from your analysis outputs.
-disturbance_by_site <- read.csv("analysis_outputs/full_disturbance_and_forest_area_by_site.csv")
-buffer_data <- read.csv("analysis_outputs/n2k_and_buffer_forest_area.csv")
-region_data <- read.csv("imports/NATURA2000_v2022_WITH_REGIONS.csv")
+disturbance_by_site <- read.csv("imports/full_disturbance_and_forest_area_by_site.csv")
+buffer_data <- read.csv("imports/n2k_and_buffer_forest_area.csv")
+region_data <- read.csv("imports/Natura2000_v2022_WITH_REGIONS.csv")
 
 # Merge the datasets
 model_data <- disturbance_by_site %>%
@@ -168,6 +168,6 @@ region_summary <- prioritized_risk_list %>%
 cat("\n\nSummary of Predicted High-Risk Sites by Region (top 20) using LASSO:\n\n")
 print(head(region_summary, 20))
 
-write.csv(region_summary, "analysis_outputs/region_risk_summary_LASSO.csv", row.names = FALSE)
+write.csv(region_summary, "csvs/region_risk_summary_LASSO.csv", row.names = FALSE)
 cat("\n\nRegional summary complete.\n")
 cat("A new file named 'region_risk_summary_LASSO.csv' has been created.\n")
